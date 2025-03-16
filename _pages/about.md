@@ -10,9 +10,9 @@ profile:
   image_circular: true # crops the image to make it circular
   more_info: >
     <p>PhD Candidate, Agricultural Economics, Purdue University</p>
-    /a
+    <br> 
     <p>Graduate Trade Research Assistance, GTAP</p>
-    /a
+    <br> 
     <p>Data-Driven Business Owner</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
