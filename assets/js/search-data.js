@@ -9,9 +9,9 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-cv",
-          title: "CV",
-          description: "Please refer to the full CV here",
+  },{id: "nav-background",
+          title: "Background",
+          description: "PhD Candidate | International Trade Economist. Please refer to the full CV here",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
