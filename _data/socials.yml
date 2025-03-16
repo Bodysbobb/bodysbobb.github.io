@@ -10,8 +10,8 @@
 email: ppuangch@purdue.edu # your email address
 # facebook_id: # your facebook id
 # flickr_id: # your flickr id
-# github_username: # your GitHub user name
-gitlab_username: bodysbobb # your GitLab user name
+github_username: bodysbobb # your GitHub user name
+# gitlab_username: bodysbobb # your GitLab user name
 # ieee_id: # your ieeexplore.ieee.org/author/id
 # inspirehep_id: 1010907 # Inspire HEP author ID
 # instagram_id: # your instagram id
@@ -41,7 +41,7 @@ linkedin_username: pattawee-puangchit # your LinkedIn user name
 # whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 # wikidata_id: # your wikidata id
 # wikipedia_id: # your wikipedia id (Case sensitive)
-# work_url: # work page URL
+work_url: https://gtap.agecon.purdue.edu/network/member_display.asp?UserID=37552
 # x_username: # your X handle
 # youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 # zotero_username: # your zotero username
