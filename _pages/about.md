@@ -2,16 +2,16 @@
 layout: about
 title: Home
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: "<a href='https://vcard-admin.pkp.homes/ZYrVxC2m6S' target='_blank'>Business Card</a>
 
 profile:
-  align: right
+  align: left
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>PhD Candidate, Agricultural Economics, Purdue University</p>
+    <p>Graduate Trade Research Assistance, GTAP</p>
+    <p>Data-Driven Business Owner</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,8 +27,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Pattawee is a Ph.D. candidate in Agricultural Economics at Purdue University and a research assistant at GTAP. His research focuses on international trade policies, modeling tariff and non-tariff measures, and analyzing ASEAN Economic Community policies using CGE models. With a strong background in data analytics, he has worked extensively with large datasets and advanced econometric modeling techniques to support economic and business decision-making.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Beyond academia, Pattawee has diverse industry experience, currently serving as the Chief Financial Officer & Head of Data Analytics at AMATA Production Co., Ltd., and the Chief Financial Officer at V Sports Management Co., Ltd. He previously worked as a Business Data Analyst at Unilever Thailand, where he specialized in market analytics, forecasting, and consumer behavior analysis. His experience also includes working as a Graduate Teaching Assistant at the University of California, Davis, where he applied quantitative analysis in economic and business contexts.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+A recipient of the prestigious King of Thailand and Thai government scholarships, Pattawee integrates economic theory, big data analytics, and strategic insights to drive informed decision-making in both academic and business environments.
