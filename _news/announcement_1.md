@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-<a href="https://bodysbobb.github.io/HARplus/">R Package - HARplus</a>
+<a href="https://bodysbobb.github.io/HARplus/">HARplus R Package for 'har' and 'sl4' data extraction: Available on CRAN</a>

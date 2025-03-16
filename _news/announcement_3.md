@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2025-03-15 15:59:00-0400
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+<a href="https://www.brookings.edu/articles/trumps-25-tariffs-on-canada-and-mexico-will-be-a-blow-to-all-3-economies/">Trump's 25% Tariff on Canda and Mexico</a>
