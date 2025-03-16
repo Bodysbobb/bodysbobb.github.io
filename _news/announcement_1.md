@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-<a href="[https://www.pinterest.com](https://bodysbobb.github.io/HARplus/)">R Package - HARplus</a>
+<a href="https://bodysbobb.github.io/HARplus/">R Package - HARplus</a>
