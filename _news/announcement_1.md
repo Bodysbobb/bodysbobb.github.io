@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2025-03-15 15:59:00-0400
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+<a href="[https://www.pinterest.com](https://bodysbobb.github.io/HARplus/)">R Package - HARplus</a>
