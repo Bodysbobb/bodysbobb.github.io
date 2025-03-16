@@ -398,12 +398,18 @@ ninja.data = [{
           title: 'A long announcement with details',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
+              window.location.href = "/news/announcement_template_long/";
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "news-r-package-harplus",
-          title: 'R Package - HARplus',
+          section: "News",},{id: "news-harplus-r-package-for-har-and-sl4-data-extraction-available-on-cran",
+          title: 'HARplus R Package for ‘har’ and ‘sl4’ data extraction: Available on CRAN',
+          description: "",
+          section: "News",},{id: "news-gtapviz-r-package-for-gtap-result-visualization-in-development",
+          title: 'GTAPViz R Package for GTAP Result Visualization: In Development',
+          description: "",
+          section: "News",},{id: "news-trump-s-25-tariff-on-canda-and-mexico",
+          title: 'Trump’s 25% Tariff on Canda and Mexico',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
