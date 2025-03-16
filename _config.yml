@@ -192,11 +192,11 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
-  - _pages_blog.md
-  - _pages_books.md
-  - _pages_dropdown.md
-  - _pages_news.md
-  - _pages_teeaching.md
+  - _pages/blog.md
+  - _pages/books.md
+  - _pages/dropdown.md
+  - _pages/news.md
+  - _pages/teeaching.md
   
 keep_files:
   - CNAME
