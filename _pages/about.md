@@ -2,7 +2,7 @@
 layout: about
 title: Home
 permalink: /
-subtitle: "<a href='https://vcard-admin.pkp.homes/ZYrVxC2m6S' target='_blank'>Business Card</a>
+subtitle: "<a href='https://vcard-admin.pkp.homes/ZYrVxC2m6S' target='_blank'>Business Card</a>"
 
 profile:
   align: left
