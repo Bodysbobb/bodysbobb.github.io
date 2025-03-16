@@ -7,7 +7,7 @@ subtitle: "<a href='https://vcard-admin.pkp.homes/ZYrVxC2m6S' target='_blank'>Bu
 profile:
   align: left
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>PhD Candidate, Agricultural Economics, Purdue University</p>
     <p>Graduate Trade Research Assistance, GTAP</p>
