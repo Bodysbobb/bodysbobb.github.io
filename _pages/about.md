@@ -2,7 +2,7 @@
 layout: about
 title: Home
 permalink: /
-subtitle: "<a href='https://vcard-admin.pkp.homes/ZYrVxC2m6S' target='_blank'>Business Card</a>"
+subtitle: "<a href='https://vcard-admin.pkp.homes/ZYrVxC2m6S' target='_blank'>Contact Info</a>"
 
 profile:
   align: left
@@ -10,7 +10,9 @@ profile:
   image_circular: true # crops the image to make it circular
   more_info: >
     <p>PhD Candidate, Agricultural Economics, Purdue University</p>
+    /a
     <p>Graduate Trade Research Assistance, GTAP</p>
+    /a
     <p>Data-Driven Business Owner</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
