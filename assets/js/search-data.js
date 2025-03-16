@@ -464,11 +464,11 @@ ninja.data = [{
           window.open("mailto:%70%70%75%61%6E%67%63%68@%70%75%72%64%75%65.%65%64%75", "_blank");
         },
       },{
-        id: 'social-gitlab',
-        title: 'GitLab',
+        id: 'social-github',
+        title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("https://gitlab.com/bodysbobb", "_blank");
+          window.open("https://github.com/bodysbobb", "_blank");
         },
       },{
         id: 'social-linkedin',
@@ -476,6 +476,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://www.linkedin.com/in/pattawee-puangchit", "_blank");
+        },
+      },{
+        id: 'social-work',
+        title: 'Work',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://gtap.agecon.purdue.edu/network/member_display.asp?UserID=37552", "_blank");
         },
       },{
       id: 'light-theme',
