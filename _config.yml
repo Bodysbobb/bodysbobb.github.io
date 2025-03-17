@@ -646,14 +646,14 @@ jsonresume:
 # Section title mapping for CV display
 cv_section_titles:
   basics: "Profile"
-  work: "Work Experience"
+  work: "Experience" 
   education: "Education"
   publications: "Publications"
   projects: "Projects"
-  volunteer: "Volunteer"
+  volunteer: "Volunteer Experience"
   awards: "Honors & Awards"
   certificates: "Certifications"
-  skills: "Skills"
+  skills: "Technical Skills"
   languages: "Languages"
   interests: "Interests"
   references: "References"

@@ -7,7 +7,7 @@ layout: default
       <h1 class="post-title">
         {{ page.title }}
         {% if page.cv_pdf %}
-          
+          <a
             {% if page.cv_pdf contains '://' %}
               href="{{ page.cv_pdf }}"
             {% else %}
@@ -30,16 +30,39 @@ layout: default
     <article>
       <div class="cv">
         {% for entry in site.data.cv %}
-          <a class="anchor" id="{{ entry.title | slugify }}"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-bold">
-              {% if site.cv_section_titles[entry.title] %}
-                {{ site.cv_section_titles[entry.title] }}
+            <a class="anchor" id="{{ data[0] | slugify }}"></a>
+            <div class="card mt-3 p-3">
+              {% assign section_key = data[0] %}
+              
+              {% if section_key == "basics" %}
+                <h3 class="card-title font-weight-bold">Profile</h3>
+              {% elsif section_key == "awards" %}
+                <h3 class="card-title font-weight-bold">Honors & Awards</h3>
+              {% elsif section_key == "work" %}
+                <h3 class="card-title font-weight-bold">Work Experience</h3>
+              {% elsif section_key == "education" %}
+                <h3 class="card-title font-weight-bold">Education</h3>
+              {% elsif section_key == "skills" %}
+                <h3 class="card-title font-weight-bold">Skills</h3>
+              {% elsif section_key == "publications" %}
+                <h3 class="card-title font-weight-bold">Publications</h3>
+              {% elsif section_key == "projects" %}
+                <h3 class="card-title font-weight-bold">Projects</h3>
+              {% elsif section_key == "volunteer" %}
+                <h3 class="card-title font-weight-bold">Volunteer</h3>
+              {% elsif section_key == "interests" %}
+                <h3 class="card-title font-weight-bold">Interests</h3>
+              {% elsif section_key == "certificates" %}
+                <h3 class="card-title font-weight-bold">Certifications</h3>
+              {% elsif section_key == "languages" %}
+                <h3 class="card-title font-weight-bold">Languages</h3>
+              {% elsif section_key == "references" %}
+                <h3 class="card-title font-weight-bold">References</h3>
               {% else %}
-                {{ entry.title }}
+                <h3 class="card-title font-weight-bold">{{ section_key | capitalize }}</h3>
               {% endif %}
-            </h3>
-            <div>
+              
+              <div>
               {% if entry.type == 'list' %}
                 {% include cv/list.liquid %}
               {% elsif entry.type == 'map' %}
@@ -65,7 +88,7 @@ layout: default
       <h1 class="post-title">
         {{ page.title }}
         {% if page.cv_pdf %}
-          
+          <a
             {% if page.cv_pdf contains '://' %}
               href="{{ page.cv_pdf }}"
             {% else %}
@@ -97,16 +120,39 @@ layout: default
             {% continue %}
           {% endif %}
           {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
-          <a class="anchor" id="{{ data[0] | slugify }}"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-bold">
-              {% if site.cv_section_titles[data[0]] %}
-                {{ site.cv_section_titles[data[0]] }}
+            <a class="anchor" id="{{ data[0] | slugify }}"></a>
+            <div class="card mt-3 p-3">
+              {% assign section_key = data[0] %}
+              
+              {% if section_key == "basics" %}
+                <h3 class="card-title font-weight-bold">Profile</h3>
+              {% elsif section_key == "awards" %}
+                <h3 class="card-title font-weight-bold">Honors & Awards</h3>
+              {% elsif section_key == "work" %}
+                <h3 class="card-title font-weight-bold">Work Experience</h3>
+              {% elsif section_key == "education" %}
+                <h3 class="card-title font-weight-bold">Education</h3>
+              {% elsif section_key == "skills" %}
+                <h3 class="card-title font-weight-bold">Skills</h3>
+              {% elsif section_key == "publications" %}
+                <h3 class="card-title font-weight-bold">Publications</h3>
+              {% elsif section_key == "projects" %}
+                <h3 class="card-title font-weight-bold">Projects</h3>
+              {% elsif section_key == "volunteer" %}
+                <h3 class="card-title font-weight-bold">Volunteer</h3>
+              {% elsif section_key == "interests" %}
+                <h3 class="card-title font-weight-bold">Interests</h3>
+              {% elsif section_key == "certificates" %}
+                <h3 class="card-title font-weight-bold">Certifications</h3>
+              {% elsif section_key == "languages" %}
+                <h3 class="card-title font-weight-bold">Languages</h3>
+              {% elsif section_key == "references" %}
+                <h3 class="card-title font-weight-bold">References</h3>
               {% else %}
-                {{ data[0] | capitalize }}
+                <h3 class="card-title font-weight-bold">{{ section_key | capitalize }}</h3>
               {% endif %}
-            </h3>
-            <div>
+              
+              <div>
               {% case data[0] %}
                 {% when 'basics' %}
                   {% include resume/basics.liquid %}
