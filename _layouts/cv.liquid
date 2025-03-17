@@ -1,3 +1,4 @@
+
 ---
 layout: default
 ---
@@ -7,7 +8,7 @@ layout: default
       <h1 class="post-title">
         {{ page.title }}
         {% if page.cv_pdf %}
-          
+          <a
             {% if page.cv_pdf contains '://' %}
               href="{{ page.cv_pdf }}"
             {% else %}
@@ -30,15 +31,15 @@ layout: default
     <article>
       <div class="cv">
         {% for entry in site.data.cv %}
-          <a class="anchor" id="{{ entry.title | slugify }}"></a>
+          <a class="anchor" id="{{ data[0] | slugify }}"></a>
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-bold">
-              {% if site.cv_section_titles[entry.title] %}
-                {{ site.cv_section_titles[entry.title] }}
-              {% else %}
-                {{ entry.title }}
-              {% endif %}
-            </h3>
+            {% if data[0] == "basics" %}
+              <h3 class="card-title font-weight-bold">Profile</h3>
+            {% elsif data[0] == "awards" %}
+              <h3 class="card-title font-weight-bold">Honors & Awards</h3>
+            {% else %}
+              <h3 class="card-title font-weight-bold">{{ data[0] | capitalize }}</h3>
+            {% endif %}
             <div>
               {% if entry.type == 'list' %}
                 {% include cv/list.liquid %}
@@ -65,7 +66,7 @@ layout: default
       <h1 class="post-title">
         {{ page.title }}
         {% if page.cv_pdf %}
-          
+          <a
             {% if page.cv_pdf contains '://' %}
               href="{{ page.cv_pdf }}"
             {% else %}
@@ -99,13 +100,13 @@ layout: default
           {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
           <a class="anchor" id="{{ data[0] | slugify }}"></a>
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-bold">
-              {% if site.cv_section_titles[data[0]] %}
-                {{ site.cv_section_titles[data[0]] }}
-              {% else %}
-                {{ data[0] | capitalize }}
-              {% endif %}
-            </h3>
+           {% if data[0] == "basics" %}
+              <h3 class="card-title font-weight-bold">Profile</h3>
+            {% elsif data[0] == "awards" %}
+              <h3 class="card-title font-weight-bold">Honors & Awards</h3>
+            {% else %}
+              <h3 class="card-title font-weight-bold">{{ data[0] | capitalize }}</h3>
+            {% endif %}
             <div>
               {% case data[0] %}
                 {% when 'basics' %}
@@ -141,4 +142,4 @@ layout: default
       </div>
     </article>
   </div>
-{% endunless %}
+{% endunless %)
