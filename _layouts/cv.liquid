@@ -1,4 +1,3 @@
-
 ---
 layout: default
 ---
@@ -8,7 +7,7 @@ layout: default
       <h1 class="post-title">
         {{ page.title }}
         {% if page.cv_pdf %}
-          <a>
+          <a
             {% if page.cv_pdf contains '://' %}
               href="{{ page.cv_pdf }}"
             {% else %}
@@ -142,4 +141,4 @@ layout: default
       </div>
     </article>
   </div>
-{% endunless %)
+{% endunless %}
