@@ -54,7 +54,7 @@ socials_in_search: true
 bib_search: true
 
 # Dimensions
-max_width: 930px
+max_width: 1400px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -642,18 +642,3 @@ jsonresume:
   - languages
   - interests
   - references
-
-# Section title mapping for CV display
-cv_section_titles:
-  basics: "Profile"
-  work: "Experience" 
-  education: "Education"
-  publications: "Publications"
-  projects: "Projects"
-  volunteer: "Volunteer Experience"
-  awards: "Honors & Awards"
-  certificates: "Certifications"
-  skills: "Technical Skills"
-  languages: "Languages"
-  interests: "Interests"
-  references: "References"

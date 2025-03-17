@@ -17,6 +17,36 @@ li,
 span,
 strong {
   color: var(--global-text-color);
+  font-size: 1.3rem;  // Increase font size globally (adjust the value as needed)
+}
+
+h1 {
+  font-size: 2.7rem; 
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.95rem;
+}
+
+h4 {
+  font-size: 1.7rem;
+}
+
+h5 {
+  font-size: 1.45rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.6;  // Improve readability
 }
 
 hr {
@@ -1079,12 +1109,12 @@ nav[data-toggle="toc"] {
   top: 5rem;
 
   .nav .nav > li > a {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 
   .nav > li > a {
     color: var(--global-text-color);
-    font-size: 0.75rem;
+    font-size: 1rem;
 
     &:hover {
       color: var(--global-hover-color);
@@ -1095,7 +1125,7 @@ nav[data-toggle="toc"] {
   .nav-link.active {
     color: var(--global-theme-color);
     border-left-color: var(--global-theme-color);
-    font-size: 0.75rem;
+    font-size: 1rem;
 
     &:hover {
       color: var(--global-hover-color);
