@@ -535,6 +535,19 @@ footer.sticky-bottom {
 .date-column {
   width: 75px;
   transform: translateX(-15px) translateY(-5px);
+  text-align: left !important; /* Add this line to force left alignment */
+}
+
+.date-column .badge {
+  text-align: left !important;
+  display: block !important; /* Make badge take full width */
+  margin-left: 0 !important;
+}
+
+.date-column table.table-cv, 
+.date-column table.table-cv td {
+  text-align: left !important;
+  padding-left: 0 !important;
 }
 
 // Repositories

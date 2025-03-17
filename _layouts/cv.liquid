@@ -30,9 +30,15 @@ layout: default
     <article>
       <div class="cv">
         {% for entry in site.data.cv %}
-          <a class="anchor" id="{{ entry.title }}"></a>
+          <a class="anchor" id="{{ data[0] | slugify }}"></a>
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
+            {% if data[0] == "basics" %}
+              <h3 class="card-title font-weight-bold">Profile</h3>
+            {% elsif data[0] == "awards" %}
+              <h3 class="card-title font-weight-bold">Honors & Awards</h3>
+            {% else %}
+              <h3 class="card-title font-weight-bold">{{ data[0] | capitalize }}</h3>
+            {% endif %}
             <div>
               {% if entry.type == 'list' %}
                 {% include cv/list.liquid %}
@@ -87,10 +93,19 @@ layout: default
               {% continue %}
             {% endunless %}
           {% endif %}
+          {% if data[1].size == 0 %}
+            {% continue %}
+          {% endif %}
           {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
-          <a class="anchor" id="{{ data[0] }}"></a>
+          <a class="anchor" id="{{ data[0] | slugify }}"></a>
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
+           {% if data[0] == "basics" %}
+              <h3 class="card-title font-weight-bold">Profile</h3>
+            {% elsif data[0] == "awards" %}
+              <h3 class="card-title font-weight-bold">Honors & Awards</h3>
+            {% else %}
+              <h3 class="card-title font-weight-bold">{{ data[0] | capitalize }}</h3>
+            {% endif %}
             <div>
               {% case data[0] %}
                 {% when 'basics' %}
