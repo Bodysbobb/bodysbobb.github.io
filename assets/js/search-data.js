@@ -9,8 +9,8 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-background",
-          title: "Background",
+  },{id: "nav-portfolio",
+          title: "Portfolio",
           description: "PhD Candidate | International Trade Economist. Please refer to the full CV here",
           section: "Navigation",
           handler: () => {
