@@ -3,11 +3,10 @@
 # -----------------------------------------------------------------------------
 
 title: Pattawee Puangchit # the website title (if blank, full name will be used instead)
-first_name: Pattawee
+first_name: 
 middle_name: 
-last_name: Puangchit
-contact_note: >
-  ppuangch@purdue.edu
+last_name: 
+contact_note: "<a href='mailto:ppuangch@purdue.edu'>ppuangch@purdue.edu</a>"
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >

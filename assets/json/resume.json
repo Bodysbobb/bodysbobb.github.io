@@ -114,6 +114,62 @@
       ]
     }
   ],
+  "working_papers": [
+    {
+      "name": "Modeling Non-Tariff Measures on ASEAN Region: A Dynamic-GTAP CGE Model",
+      "authors": ["Puangchit, P."],
+      "note": "Working paper"
+    },
+    {
+      "name": "Impacts of Non-tariff Measures on ASEAN Trade: A Dynamic Approach",
+      "authors": ["Puangchit, P.", "Corong, E."],
+      "note": "Presented at The 27th GTAP Annual Conference"
+    },
+    {
+      "name": "The Impact of the ASEAN Economic Community on Agricultural Trade: Synthetic Control Method",
+      "authors": ["Puangchit, P.", "Hadachek, J.D."]
+    },
+    {
+      "name": "Chapter 12.B Disaggregating labor payments",
+      "authors": ["Corong, E.", "Puangchit, P.", "Tsigas, M."],
+      "note": "In Global Trade, Assistance, and Production: The GTAP 11 Data Base"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "GTAP Dynamic Short Course Certificate",
+      "date": "2025-03",
+      "issuer": "Center for Global Trade Analysis (GTAP)",
+      "url": "",
+      "summary": "Jan - Mar 2025 intensive course on Recursive GTAP Dynamic modeling techniques",
+      "highlights": [
+        "Studied advanced dynamic modeling approaches for CGE analysis",
+        "Completed group project focused on trade war implications using dynamic framework"
+      ]
+    },
+    {
+      "name": "Advanced CGE Modeling Certificate",
+      "date": "2023-08",
+      "issuer": "Purdue University",
+      "url": "",
+      "summary": "Specialized training in advanced computational general equilibrium modeling techniques",
+      "highlights": [
+        "Focus on policy simulation and economic impact analysis",
+        "Applied modeling to international trade policy scenarios"
+      ]
+    },
+    {
+      "name": "Data Visualization and Analysis",
+      "date": "2022-06",
+      "issuer": "University of California, Davis",
+      "url": "",
+      "summary": "Certificate program in advanced data visualization techniques",
+      "highlights": [
+        "Specialized in economic data presentation",
+        "Developed interactive visualization tools for trade analysis"
+      ]
+    }
+  ],
   "awards": [
     {
       "title": "Anandamahidol Foundation Scholarship",
@@ -155,27 +211,6 @@
       "date": "2022",
       "issuer": "Purdue University",
       "amount": "$25,000"
-    }
-  ],
-  "working_papers": [
-    {
-      "name": "Modeling Non-Tariff Measures on ASEAN Region: A Dynamic-GTAP CGE Model",
-      "authors": ["Puangchit, P."],
-      "note": "Working paper"
-    },
-    {
-      "name": "Impacts of Non-tariff Measures on ASEAN Trade: A Dynamic Approach",
-      "authors": ["Puangchit, P.", "Corong, E."],
-      "note": "Presented at The 27th GTAP Annual Conference"
-    },
-    {
-      "name": "The Impact of the ASEAN Economic Community on Agricultural Trade: Synthetic Control Method",
-      "authors": ["Puangchit, P.", "Hadachek, J.D."]
-    },
-    {
-      "name": "Chapter 12.B Disaggregating labor payments",
-      "authors": ["Corong, E.", "Puangchit, P.", "Tsigas, M."],
-      "note": "In Global Trade, Assistance, and Production: The GTAP 11 Data Base"
     }
   ],
   "skills": [

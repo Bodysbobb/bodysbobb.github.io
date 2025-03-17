@@ -1,12 +1,47 @@
 ---
 layout: default
 ---
+<style>
+  /* Reduce paragraph spacing from 1.5rem to 1rem */
+  .post article p {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Keep section spacing the same */
+  .post h2 {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .post .clearfix {
+    margin-bottom: 3rem;
+  }
+  
+  .post .news, 
+  .post .latest-posts {
+    margin-bottom: 3rem;
+  }
+  
+  .post article > div, 
+  .post article > section {
+    margin-bottom: 3rem;
+  }
+
+  /* Add space below subtitle */
+  .post-header .desc {
+      display: block;
+      margin-bottom: 3rem; /* Adjust as needed */
+  }
+  
+</style>
+
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
         <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
+        <span class="font-weight-bold">{{ site.last_name }}
       {% else %}
         {{ site.title }}
       {% endif %}
@@ -33,7 +68,9 @@ layout: default
           %}
         {% endif %}
         {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
+            <div class="more-info" style="margin-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}: 20px;">
+              {{ page.profile.more_info }}
+            </div>
         {% endif %}
       </div>
     {% endif %}
@@ -43,7 +80,7 @@ layout: default
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">Latest Projects</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
@@ -51,7 +88,7 @@ layout: default
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest Blogs</a>
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}
@@ -59,7 +96,7 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}

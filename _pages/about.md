@@ -2,23 +2,23 @@
 layout: about
 title: Home
 permalink: /
-subtitle: "<a href='https://vcard-admin.pkp.homes/ZYrVxC2m6S' target='_blank'>Contact Info</a>"
+class: about-page
+subtitle: "PhD Candidate | Trade Researcher | Data-Driven Thai Business Owner"
 
 profile:
   align: left
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p>PhD Candidate, Agricultural Economics, Purdue University</p>
-    <br> 
-    <p>Graduate Research Assistance, GTAP</p>
-    <br> 
-    <p>Data-Driven Business Owner</p>
+    <a href='https://vcard-admin.pkp.homes/ZYrVxC2m6S' target='_blank'>
+      <i class='fa-solid fa-address-card' style='margin-right: 5px;'></i> Contact</a>
+    <span style='display: inline-block; width: 20px;'></span> 
+    <a href='https://bodysbobb.github.io/assets/pdf/Pattawee_Puangchit_CV.pdf' target='_blank'>
+      <i class='fa-solid fa-file-lines' style='margin-right: 5px;'></i> CV</a>
+
 
 selected_papers: FALSE # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
-
-
 
 announcements:
   enabled: true # includes a list of news items
@@ -29,10 +29,14 @@ latest_posts:
   enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
+
 ---
 
-Pattawee is a Ph.D. candidate in Agricultural Economics at Purdue University and a research assistant at GTAP. His research focuses on international trade policies, modeling tariff and non-tariff measures, and analyzing ASEAN Economic Community policies using CGE models. With a strong background in data analytics, he has worked extensively with large datasets and advanced econometric modeling techniques to support economic and business decision-making.
+Pattawee Puangchit is a **Ph.D. candidate** in Agricultural Economics at Purdue University and a **research assistant at GTAP**, focusing on international trade policies and CGE modeling. His research examines **tariff and non-tariff measures** and their impact on international trade and macroeconomics.  
 
-Beyond academia, Pattawee has diverse industry experience, currently serving as the Chief Financial Officer & Head of Data Analytics at AMATA Production Co., Ltd., and the Chief Financial Officer at V Sports Management Co., Ltd. He previously worked as a Business Data Analyst at Unilever Thailand, where he specialized in market analytics, forecasting, and consumer behavior analysis. His experience also includes working as a Graduate Teaching Assistant at the University of California, Davis, where he applied quantitative analysis in economic and business contexts.
+With a strong background in **data analytics and econometrics**, he has worked extensively with large datasets, predictive modeling, and economic simulations to support policy and business decision-making.  
 
-A recipient of the prestigious King of Thailand and Thai government scholarships, Pattawee integrates economic theory, big data analytics, and strategic insights to drive informed decision-making in both academic and business environments.
+Beyond academia, he is the **Chief Financial Officer & Head of Data Analytics** at AMATA Production Co., Ltd. Previously, he was a **Business Data Analyst at Unilever Thailand**, specializing in market analytics, forecasting, and consumer behavior analysis. 
+
+A recipient of **prestigious Thai government scholarships (Anandamahidol Foundation)**, Pattawee integrates **economic theory, big data analytics, and strategic insights** to drive informed decision-making in both academic and industry settings. 
+
