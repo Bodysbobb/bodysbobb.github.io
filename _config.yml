@@ -642,3 +642,18 @@ jsonresume:
   - languages
   - interests
   - references
+
+# Section title mapping for CV display
+cv_section_titles:
+  basics: "Profile"
+  work: "Work Experience"
+  education: "Education"
+  publications: "Publications"
+  projects: "Projects"
+  volunteer: "Volunteer"
+  awards: "Honors & Awards"
+  certificates: "Certifications"
+  skills: "Skills"
+  languages: "Languages"
+  interests: "Interests"
+  references: "References"
