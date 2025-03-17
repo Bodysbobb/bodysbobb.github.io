@@ -1,9 +1,9 @@
 {
   "basics": {
-    "name": "Pattawee Puangchit",
+    "Name": "Pattawee Puangchit",
     "image": "/assets/img/profile_pic.png",
-    "email": "ppuangch@purdue.edu",
-    "cv": "<a href='/assets/pdf/Pattawee_Puangchit_CV.pdf' target='_blank'>Pattawee's CV</a>",
+    "Email": "ppuangch@purdue.edu",
+    "CV": "<a href='/assets/pdf/Pattawee_Puangchit_CV.pdf' target='_blank'>Pattawee's CV</a>",
     "Interest": "Experienced data analyst with 6+ years of expertise in both academic research and the private sector, including global corporations and entrepreneurial ventures. Passionate about applying data-driven insights to international trade, business strategy, and economic policy analysis.",
     "location": {
       "address": "KRAN #634, Department of Agricultural Economics, Purdue University",
