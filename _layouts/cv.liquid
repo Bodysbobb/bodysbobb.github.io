@@ -1,13 +1,37 @@
 ---
 layout: default
 ---
+{% assign section_titles = 
+  "basics:Profile,
+   awards:Honors & Awards,
+   work:Experience,
+   education:Education,
+   skills:Technical Skills,
+   publications:Publications,
+   projects:Projects,
+   volunteer:Volunteer Experience,
+   interests:Interests,
+   certificates:Certifications,
+   languages:Languages,
+   references:References"
+   | split: "," 
+%}
+
+{% assign title_map = {} %}
+{% for pair in section_titles %}
+  {% assign kv = pair | split: ":" %}
+  {% assign key = kv[0] %}
+  {% assign value = kv[1] %}
+  {% assign title_map = title_map | merge: {key: value} %}
+{% endfor %}
+
 {% unless site.data.resume %}
   <div class="post">
     <header class="post-header">
       <h1 class="post-title">
         {{ page.title }}
         {% if page.cv_pdf %}
-          <a
+          
             {% if page.cv_pdf contains '://' %}
               href="{{ page.cv_pdf }}"
             {% else %}
@@ -30,15 +54,15 @@ layout: default
     <article>
       <div class="cv">
         {% for entry in site.data.cv %}
-          <a class="anchor" id="{{ data[0] | slugify }}"></a>
+          <a class="anchor" id="{{ entry.title | slugify }}"></a>
           <div class="card mt-3 p-3">
-            {% if data[0] == "basics" %}
-              <h3 class="card-title font-weight-bold">Profile</h3>
-            {% elsif data[0] == "awards" %}
-              <h3 class="card-title font-weight-bold">Honors & Awards</h3>
-            {% else %}
-              <h3 class="card-title font-weight-bold">{{ data[0] | capitalize }}</h3>
-            {% endif %}
+            <h3 class="card-title font-weight-bold">
+              {% if title_map[entry.title] %}
+                {{ title_map[entry.title] }}
+              {% else %}
+                {{ entry.title }}
+              {% endif %}
+            </h3>
             <div>
               {% if entry.type == 'list' %}
                 {% include cv/list.liquid %}
@@ -65,7 +89,7 @@ layout: default
       <h1 class="post-title">
         {{ page.title }}
         {% if page.cv_pdf %}
-          <a
+          
             {% if page.cv_pdf contains '://' %}
               href="{{ page.cv_pdf }}"
             {% else %}
@@ -99,13 +123,13 @@ layout: default
           {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
           <a class="anchor" id="{{ data[0] | slugify }}"></a>
           <div class="card mt-3 p-3">
-           {% if data[0] == "basics" %}
-              <h3 class="card-title font-weight-bold">Profile</h3>
-            {% elsif data[0] == "awards" %}
-              <h3 class="card-title font-weight-bold">Honors & Awards</h3>
-            {% else %}
-              <h3 class="card-title font-weight-bold">{{ data[0] | capitalize }}</h3>
-            {% endif %}
+            <h3 class="card-title font-weight-bold">
+              {% if title_map[data[0]] %}
+                {{ title_map[data[0]] }}
+              {% else %}
+                {{ data[0] | capitalize }}
+              {% endif %}
+            </h3>
             <div>
               {% case data[0] %}
                 {% when 'basics' %}
