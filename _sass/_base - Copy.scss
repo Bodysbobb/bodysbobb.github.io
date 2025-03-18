@@ -541,26 +541,26 @@ footer.sticky-bottom {
 }
 
 .cv .card-title {
-  font-size: 1.8rem;
+  font-size: 1.8rem; /* Adjust for larger section titles */
   font-weight: bold;
 }
 
 .cv .title {
   font-size: 1.2rem;
-  vertical-align: top !important;
+  vertical-align: top !important; /* Ensures alignment at the top */
   display: flex;
 }
 
 .date-column {
   width: 75px;
   transform: translateX(-15px) translateY(-5px);
-  text-align: left !important;
+  text-align: left !important; /* Add this line to force left alignment */
   margin-top: 2px !important; 
 }
 
 .date-column .badge {
   text-align: left !important;
-  display: block !important;
+  display: block !important; /* Make badge take full width */
   margin-left: 0 !important;
   margin-top: 2px !important; 
 }
