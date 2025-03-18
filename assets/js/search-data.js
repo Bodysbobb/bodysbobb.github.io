@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "Projects",
-          description: "A growing collection of your cool projects.",
+          description: "Both of my academic projects and business are growing!",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -411,51 +411,21 @@ ninja.data = [{
           section: "News",},{id: "news-harplus-r-package-for-har-and-sl4-data-extraction-available-on-cran",
           title: 'HARplus R Package for ‘har’ and ‘sl4’ data extraction: Available on CRAN',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-amata-production-co-ltd-thailand",
+          title: 'AMATA Production Co., Ltd., Thailand',
+          description: "Co-founder of AMATA Production Co., Ltd., a business specializing in high-quality apparel, printing solutions, and smart business tools with precision and innovation.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+              window.location.href = "/projects/AMATAProduction/";
+            },},{id: "projects-gtapviz-r-package",
+          title: 'GTAPViz: R Package',
+          description: "Facilitates the reporting of CGE model outputs, particularly for GTAP users, but it can also be applied to other results based on &#39;har&#39; and &#39;sl4&#39; file.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+              window.location.href = "/projects/GTAPViz/";
+            },},{id: "projects-harplus-r-package",
+          title: 'HARplus: R Package',
+          description: "Officially available on CRAN, HARplus enhances GEMPACK users&#39; experience by streamlining &#39;har&#39; and &#39;sl4&#39; file processing for multiple inputs simultaneously.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
+              window.location.href = "/projects/HARplus/";
             },},{
         id: 'social-email',
         title: 'email',
