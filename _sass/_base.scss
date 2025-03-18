@@ -290,6 +290,7 @@ ul.task-list input[type="checkbox"] {
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
+    font-weight: bold;
 
     &:hover {
       color: var(--global-hover-color);
@@ -300,6 +301,7 @@ ul.task-list input[type="checkbox"] {
     background-color: inherit;
     font-weight: bolder;
     color: var(--global-theme-color);
+    font-weight: bold;
 
     &:hover {
       color: var(--global-hover-color);
@@ -532,31 +534,41 @@ footer.sticky-bottom {
   color: var(--global-text-color);
 }
 
+.cv .card-title {
+  font-size: 1.8rem; /* Adjust for larger section titles */
+  font-weight: bold;
+}
+
+.cv .title {
+  font-size: 1.2rem;
+  vertical-align: top !important; /* Ensures alignment at the top */
+  display: flex;
+}
+
 .date-column {
   width: 75px;
   transform: translateX(-15px) translateY(-5px);
   text-align: left !important; /* Add this line to force left alignment */
+  margin-top: 2px !important; 
 }
 
 .date-column .badge {
   text-align: left !important;
   display: block !important; /* Make badge take full width */
   margin-left: 0 !important;
+  margin-top: 2px !important; 
 }
 
 .date-column table.table-cv, 
 .date-column table.table-cv td {
   text-align: left !important;
   padding-left: 0 !important;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  margin-top: 2px !important; 
 }
 
 .location {
   font-size: 0.9rem !important;
-}
-
-.location .badge {
-  font-size: 1.1rem;
 }
 
 // Repositories
@@ -892,6 +904,24 @@ footer.sticky-bottom {
       border-color: var(--global-highlight-color);
     }
   }
+}
+
+.publications h2.category-heading {
+  color: var(--global-text-color);
+  border-top: 1px solid var(--global-divider-color);
+  padding-top: 1rem;
+  margin-top: 2rem;
+  text-align: right;
+  font-weight: bold;
+}
+
+.publications ol.bibliography h2.bibliography {
+  display: none;
+}
+
+.publications ol.bibliography {
+  padding: 0;
+  margin-top: 0;
 }
 
 // Rouge Color Customization
