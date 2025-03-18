@@ -198,6 +198,7 @@ ul.task-list input[type="checkbox"] {
   .more-info {
     margin-bottom: 70px;
     margin-top: 5px;
+    text-align: center !important;
     font-family: monospace;
     font-size: 1.1rem;
 
@@ -247,7 +248,7 @@ ul.task-list input[type="checkbox"] {
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
+  background-color: var(--global-theme-color);
   opacity: 0.95;
 }
 
@@ -256,11 +257,11 @@ ul.task-list input[type="checkbox"] {
   border: 1px solid var(--global-divider-color);
 
   a:not(.active) {
-    color: var(--global-text-color);
+    color: var(--global-bg-color);
   }
 
   a:hover {
-    color: var(--global-hover-color);
+    color: var(--global-hover-nav-color);
   }
 
   .dropdown-divider {
@@ -272,7 +273,7 @@ ul.task-list input[type="checkbox"] {
   color: var(--global-text-color);
 
   &:hover {
-    color: var(--global-hover-color);
+    color: var(--global-hover-nav-color);
     background-color: var(--global-bg-color);
   }
 }
@@ -285,26 +286,27 @@ ul.task-list input[type="checkbox"] {
   }
 
   .navbar-brand {
-    color: var(--global-text-color);
+    color: var(--global-bg-color);
+    font-weight: 700 !important;
   }
 
   .navbar-nav .nav-item .nav-link {
-    color: var(--global-text-color);
+    color: var(--global-bg-color);
     font-weight: normal;
 
     &:hover {
-      color: var(--global-hover-color);
+      color: var(--global-hover-nav-color);
     }
   }
 
   .navbar-nav .nav-item.active > .nav-link {
     background-color: inherit;
     font-weight: bolder;
-    color: var(--global-theme-color);
+    color: var(--global-bg-color);
     font-weight: bold;
 
     &:hover {
-      color: var(--global-hover-color);
+      color: var(--global-hover-nav-color);
     }
   }
 
@@ -391,10 +393,10 @@ ul.task-list input[type="checkbox"] {
   padding: 0;
   border: 0;
   background-color: inherit;
-  color: var(--global-text-color);
+  color: var(--global-bg-color);
 
   &:hover {
-    color: var(--global-hover-color);
+    color: var(--global-hover-nav-color);
   }
 }
 
@@ -718,12 +720,13 @@ footer.sticky-bottom {
   }
 
   h2.category {
-    color: var(--global-divider-color);
-    border-bottom: 1px solid var(--global-divider-color);
-    padding-top: 0.5rem;
+    color: var(--global-theme-color);
+    border-top: 1px solid var(--global-theme-color);
+    padding-top: 1rem;
     margin-top: 2rem;
-    margin-bottom: 1rem;
     text-align: right;
+    font-weight: normal; 
+    font-style: italic;  
   }
 }
 
@@ -925,11 +928,11 @@ footer.sticky-bottom {
 
 // Category Separator (Publised / Working)
 .publications h2.category-heading {
-  color: var(--global-text-color);
-  border-top: 1px solid var(--global-divider-color);
+  color: var(--global-theme-color);
+  border-top: 1px solid var(--global-theme-color);
   padding-top: 1rem;
   margin-top: 2rem;
-  text-align: left;
+  text-align: right;
   font-weight: normal; 
   font-style: italic;  
 }
@@ -1479,4 +1482,19 @@ figure.cover {
   a.cover-link:hover {
     color: #23212d !important;
   }
+}
+
+
+/* 1. Make page titles bold */
+.post-title {
+  font-weight: 700;
+}
+
+.card .card-title {
+  font-weight: 700;
+}
+
+/* Make section headers bold */
+h1, h2, h3.card-title {
+  font-weight: 700;
 }
