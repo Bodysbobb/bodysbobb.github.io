@@ -287,7 +287,11 @@ ul.task-list input[type="checkbox"] {
 
   .navbar-brand {
     color: var(--global-bg-color);
-    font-weight: 700 !important;
+    font-weight: normal; 
+    
+    &:hover {
+      color: var(--global-hover-nav-color);
+    }
   }
 
   .navbar-nav .nav-item .nav-link {
@@ -618,6 +622,13 @@ footer.sticky-bottom {
   mjx-container[jax="CHTML"][display="true"] {
     display: unset;
   }
+  
+  /* Add these properties to make title visible and bold */
+  display: block !important;
+  visibility: visible !important;
+  color: var(--global-text-color) !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
 }
 
 .post-list {
@@ -1482,12 +1493,6 @@ figure.cover {
   a.cover-link:hover {
     color: #23212d !important;
   }
-}
-
-
-/* 1. Make page titles bold */
-.post-title {
-  font-weight: 700;
 }
 
 .card .card-title {
