@@ -290,7 +290,7 @@ ul.task-list input[type="checkbox"] {
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
-    font-weight: bold;
+    font-weight: normal;
 
     &:hover {
       color: var(--global-hover-color);
@@ -906,22 +906,32 @@ footer.sticky-bottom {
   }
 }
 
+// Page Title and Search Box
+.publications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.description-text {
+  margin-right: 20px;
+}
+
+.search-container {
+  flex-shrink: 0;
+  width: 250px;
+}
+
+// Category Separator (Publised / Working)
 .publications h2.category-heading {
   color: var(--global-text-color);
   border-top: 1px solid var(--global-divider-color);
   padding-top: 1rem;
   margin-top: 2rem;
-  text-align: right;
-  font-weight: bold;
-}
-
-.publications ol.bibliography h2.bibliography {
-  display: none;
-}
-
-.publications ol.bibliography {
-  padding: 0;
-  margin-top: 0;
+  text-align: left;
+  font-weight: normal; 
+  font-style: italic;  
 }
 
 // Rouge Color Customization
