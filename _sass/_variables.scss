@@ -1,0 +1,90 @@
+/*******************************************************************************
+ * Variables used throughout the theme.
+ * To adjust anything, simply edit the variables below and rebuild the theme.
+ ******************************************************************************/
+
+@use "sass:color";
+// New Colors by Bob
+// Light Theme
+$color-bg-light: #F5F5F7;
+$color-code-bg-light: #ECECEC;
+$color-text-light: #0056B3;
+$color-text-secondary-light: #1C4E80;
+$color-theme-light: #0056B3;
+$color-hover-light: #2080D0;
+$color-hover-text-light: #FFFFFF;
+$color-text-nav-light: #FFFFFF;
+$color-hover-nav-light: #2080D0;
+$link-color-light: #0074C2; 
+$link-hover-color-light: #00A3E0; 
+$color-footer-bg-light: #E0E0E0;
+$color-footer-text-light: #005080;
+$color-footer-link-light: #FFFFFF;
+$color-bage-text-light: #FFFFFF;
+
+// Dark Theme
+$color-bg-dark: #121212;
+$color-code-bg-dark: #1A1A1A;
+$color-text-dark: #E0E0E0;
+$color-text-secondary-dark: #B8B8B8;
+$color-theme-dark: #2080D0;
+$color-hover-dark: #50A5E6;
+$color-hover-text-dark: #FFFFFF;
+$color-text-nav-light: #FFFFFF;
+$color-hover-nav-dark: #50A5E6;
+$link-color-dark: #50A5E6;
+$link-hover-color-dark: #00A3E0;
+$color-footer-bg-dark: #222222;
+$color-footer-text-dark: #B0B0B0;
+$color-footer-link-dark: #E0E0E0;
+$color-bage-text-dark: #FFFFFF;
+
+// Global Color
+$color-nav: #0056B3;
+
+// ORIGINAL COLOR 
+// Colors
+$red-color: #ff3636 !default;
+$red-color-dark: #b71c1c !default;
+$orange-color: #f29105 !default;
+$blue-color: #0076df !default;
+$blue-color-dark: #00369f !default;
+$cyan-color: #2698ba !default;
+$light-cyan-color: color.adjust($cyan-color, $lightness: 25%);
+$green-color: #00ab37 !default;
+$green-color-lime: #b7d12a !default;
+$green-color-dark: #009f06 !default;
+$green-color-light: #ddffdd !default;
+$green-color-bright: #11d68b !default;
+$purple-color: #b509ac !default;
+$light-purple-color: color.adjust($purple-color, $lightness: 25%);
+$pink-color: #f92080 !default;
+$pink-color-light: #ffdddd !default;
+$yellow-color: #efcc00 !default;
+
+$grey-color: #828282 !default;
+$grey-color-light: color.adjust($grey-color, $lightness: 40%);
+$grey-color-dark: #1c1c1d;
+$grey-900: #212529;
+
+$white-color: #ffffff !default;
+$black-color: #000000 !default;
+
+// Theme colors
+
+$code-bg-color-light: rgba($purple-color, 0.05);
+$code-bg-color-dark: #2c3237 !default;
+
+// Font awesome location
+$fa-font-path: "../webfonts";
+
+// Tabler icons location
+$ti-font-path: "../fonts";
+
+// Back To Top button config
+$back-to-top-z-index: 10;
+$back-to-top-bottom: 30px;
+$back-to-top-right: 30px;
+$back-to-top-diameter: 40px;
+$back-to-top-height: $back-to-top-diameter;
+$back-to-top-width: $back-to-top-diameter;
