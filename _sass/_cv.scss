@@ -1,7 +1,21 @@
 /*****************************
  * CV shared styles
  *****************************/
+ // Dummy Link for Empty URL Topic
+ .faux-link {
+  color: var(--global-theme-color) !important;
+  cursor: default;
+  text-decoration: none;
+}
 
+.cv .faux-link {
+  color: var(--global-link-color) !important;
+  cursor: default;
+  text-decoration: none;
+  font-weight: inherit;
+}
+
+// Original Code
 div.container-link-button {
   margin-right: 0.5rem;
 }
@@ -115,6 +129,8 @@ div.list-group {
 }
 
 td.list-group-category {
+  font-weight: bold !important;
+  font-size: 1.15rem; 
   color: var(--global-theme-color);
   margin-bottom: 0.5rem;
 }
@@ -127,12 +143,17 @@ td.list-group-category-icon {
 }
 
 td.list-group-name {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
-td.list-group-level {
-  font-size: 0.8rem;
-  padding-left: 0.5rem;
+.list-groups .list-group .skill-level {
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 1rem;
+  margin-right: 5px;
+  color: var(--global-theme-color);
+  display: inline-block;
 }
 
 td.list-group-school {
@@ -149,6 +170,20 @@ p.list-group-time {
 td.list-group-link {
   padding-left: 0.5rem;
 }
+
+/* Style for the description at the bottom of the Skills section */
+.skill-description {
+  font-size: 0.85rem; 
+  font-style: italic;
+  color: var(--global-text-color);
+  margin-top: 1.2rem !important;
+  padding-top: 8px;
+  text-align: left;
+  display: block;
+  max-width: 100%;
+  width: auto;
+}
+
 
 /*****************************
  * CV TOC styles
@@ -194,6 +229,7 @@ ul.timeline li::before {
   left: 2px;
   top: -0.5rem;
 }
+
 
 /*ul.timeline::before {
      content: "●";

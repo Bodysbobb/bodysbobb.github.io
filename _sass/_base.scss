@@ -19,6 +19,16 @@ strong {
   color: var(--global-text-color);
 }
 
+// Global Text Adjustment
+/* Make section headers bold */
+h1, h2, h3.card-title {
+  font-weight: 700;
+}
+/* Make section description bigger */
+.post-header .post-description {
+  font-size: 1.2rem !important;
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
@@ -32,15 +42,16 @@ table {
 
   th {
     font-weight: bold;
+    color: var(--global-text-color);
   }
 }
 
 a,
 table.table a {
-  color: var(--global-theme-color);
+  color: var(--global-link-color);
 
   &:hover {
-    color: var(--global-theme-color);
+    color: var(--global-link-hover-color);
     text-decoration: underline;
   }
 
@@ -180,6 +191,7 @@ ul.task-list input[type="checkbox"] {
 
   .card-body {
     padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+    color: var(--global-text-color);
   }
 }
 
@@ -248,16 +260,16 @@ ul.task-list input[type="checkbox"] {
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-theme-color);
+  background-color: var(--global-nav-color);
   opacity: 0.95;
 }
 
 .navbar .dropdown-menu {
-  background-color: var(--global-bg-color) !important;
+  background-color: var(--global-text-nav-color) !important;
   border: 1px solid var(--global-divider-color);
 
   a:not(.active) {
-    color: var(--global-bg-color);
+    color: var(--global-text-nav-color);
   }
 
   a:hover {
@@ -270,11 +282,11 @@ ul.task-list input[type="checkbox"] {
 }
 
 .dropdown-item {
-  color: var(--global-bg-color);
+  color: var(--global-text-nav-color);
 
   &:hover {
     color: var(--global-hover-nav-color);
-    background-color: var(--global-bg-color);
+    background-color: var(--global-text-nav-color);
   }
 }
 
@@ -286,7 +298,7 @@ ul.task-list input[type="checkbox"] {
   }
 
   .navbar-brand {
-    color: var(--global-bg-color);
+    color: var(--global-text-nav-color);
     font-weight: normal; 
     
     &:hover {
@@ -295,7 +307,7 @@ ul.task-list input[type="checkbox"] {
   }
 
   .navbar-nav .nav-item .nav-link {
-    color: var(--global-bg-color);
+    color: var(--global-text-nav-color);
     font-weight: normal;
 
     &:hover {
@@ -306,7 +318,7 @@ ul.task-list input[type="checkbox"] {
   .navbar-nav .nav-item.active > .nav-link {
     background-color: inherit;
     font-weight: bolder;
-    color: var(--global-bg-color);
+    color: var(--global-text-nav-color);
     font-weight: bold;
 
     &:hover {
@@ -339,7 +351,7 @@ ul.task-list input[type="checkbox"] {
       }
 
       i::before {
-        color: var(--global-bg-color);
+        color: var(--global-text-nav-color);
         transition-property: all 0.2s ease-in-out;
       }
 
@@ -527,7 +539,7 @@ footer.sticky-bottom {
       border-color: var(--global-divider-color);
 
       .badge {
-        color: var(--global-card-bg-color) !important;
+        color: var(--global-badge-text-color) !important;
         background-color: var(--global-theme-color) !important;
       }
     }
@@ -549,6 +561,7 @@ footer.sticky-bottom {
   font-size: 1.2rem;
   vertical-align: top !important;
   display: flex;
+  color: var(--global-text-color);
 }
 
 .date-column {
@@ -745,6 +758,7 @@ footer.sticky-bottom {
 
 .publications {
   margin-top: 2rem;
+  font-size: 1.2rem;
 
   h1 {
     color: var(--global-theme-color);
@@ -788,7 +802,7 @@ footer.sticky-bottom {
           display: inline-block;
           background-color: var(--global-theme-color);
           margin-bottom: 0.5rem;
-          color: var(--global-card-bg-color) !important;
+          color: var(--global-badge-text-color) !important;
 
           a {
             color: white;
@@ -838,8 +852,8 @@ footer.sticky-bottom {
 
       .links {
         a.btn {
-          color: var(--global-text-color);
-          border: 1px solid var(--global-text-color);
+          color: var(--global-theme-color);
+          border: 1px solid var(--global-theme-color);
           padding-left: 1rem;
           padding-right: 1rem;
           padding-top: 0.25rem;
@@ -847,8 +861,9 @@ footer.sticky-bottom {
           margin-left: 0;
 
           &:hover {
-            color: var(--global-theme-color);
-            border-color: var(--global-theme-color);
+            color: var(--global-badge-text-color);
+            background-color: var(--global-nav-color);
+            border-color: var(--global-hover-color);
           }
         }
         a.award.btn {
@@ -930,6 +945,7 @@ footer.sticky-bottom {
 
 .description-text {
   margin-right: 20px;
+  font-size: 1.2rem;
 }
 
 .search-container {
@@ -1499,7 +1515,3 @@ figure.cover {
   font-weight: 700;
 }
 
-/* Make section headers bold */
-h1, h2, h3.card-title {
-  font-weight: 700;
-}

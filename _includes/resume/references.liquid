@@ -16,7 +16,15 @@
             {% for item in content.items %}
               {% assign i = i | plus: 1 %}
             {% endfor %}
-            <td colspan="{{ i }}" class="list-group-category">{{ content.name }}</td>
+            <td colspan="{{ i }}" class="list-group-category">
+              {% if content.name contains '<a href' %}
+                {{ content.name }}
+              {% elsif content.url and content.url != "" %}
+                <a href="{{ content.url }}" target="_blank" rel="noopener noreferrer">{{ content.name }}</a>
+              {% else %}
+                <span class="faux-link">{{ content.name }}</span>
+              {% endif %}
+            </td>
           </tr>
           <tr>
             <td></td>

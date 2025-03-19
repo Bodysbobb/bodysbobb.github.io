@@ -20,7 +20,7 @@ layout: default
   }
   
   .date-column .badge {
-  color: var(--global-text-color);
+  color: var(--global-text-color) !important;
   background-color: var(--global-theme-color);
   }
 
@@ -90,7 +90,7 @@ layout: default
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">Latest Projects</a>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">Announcements</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}

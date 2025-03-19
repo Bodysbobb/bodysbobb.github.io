@@ -4,7 +4,45 @@
  ******************************************************************************/
 
 @use "sass:color";
+// New Colors by Bob
+// Light Theme
+$color-bg-light: #F5F5F7;
+$color-code-bg-light: #ECECEC;
+$color-text-light: #0056B3;
+$color-text-secondary-light: #1C4E80;
+$color-theme-light: #0056B3;
+$color-hover-light: #2080D0;
+$color-hover-text-light: #FFFFFF;
+$color-text-nav-light: #FFFFFF;
+$color-hover-nav-light: #2080D0;
+$link-color-light: #0074C2; 
+$link-hover-color-light: #00A3E0; 
+$color-footer-bg-light: #E0E0E0;
+$color-footer-text-light: #005080;
+$color-footer-link-light: #FFFFFF;
+$color-bage-text-light: #FFFFFF;
 
+// Dark Theme
+$color-bg-dark: #121212;
+$color-code-bg-dark: #1A1A1A;
+$color-text-dark: #E0E0E0;
+$color-text-secondary-dark: #B8B8B8;
+$color-theme-dark: #2080D0;
+$color-hover-dark: #50A5E6;
+$color-hover-text-dark: #FFFFFF;
+$color-text-nav-light: #FFFFFF;
+$color-hover-nav-dark: #50A5E6;
+$link-color-dark: #50A5E6;
+$link-hover-color-dark: #00A3E0;
+$color-footer-bg-dark: #222222;
+$color-footer-text-dark: #B0B0B0;
+$color-footer-link-dark: #E0E0E0;
+$color-bage-text-dark: #FFFFFF;
+
+// Global Color
+$color-nav: #0056B3;
+
+// ORIGINAL COLOR 
 // Colors
 $red-color: #ff3636 !default;
 $red-color-dark: #b71c1c !default;

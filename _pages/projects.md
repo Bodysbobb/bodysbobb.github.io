@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: Both of my academic projects and business are growing!
+description: My academic projects and business ventures are continuously growing. Please see all of my projects on this page!
 nav: true
 nav_order: 3
 display_categories: [Academic, Business]

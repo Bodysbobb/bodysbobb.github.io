@@ -35,6 +35,7 @@
       "location": "Songkhla, Thailand",
       "startDate": "2021",
       "endDate": "Present",
+      "url": "https://bodysbobb.github.io/projects/AMATAProduction/",
       "summary": "Co-founded a Thai local brand-building company with a registered capital of $300,000 USD, specializing in printing materials, custom apparel, and online marketing solutions.",
       "highlights": [
         "Building and managing the company's foundational business database system",
@@ -47,6 +48,7 @@
       "location": "Davis, CA, USA",
       "startDate": "2020",
       "endDate": "2021",
+      "url": null,
       "summary": "Course with Dr. Julian Alston: Welfare Analysis of Agricultural Policies"
     },
     {
@@ -256,38 +258,80 @@
     {
       "title": "National Business Plan Competition (First Runner-up)",
       "date": "2016",
-      "awarder": "Thailand",
+      "awarder": "Kasetsart University",
       "summary": "Project: Business Model for Ecotourism - Travel and Study of Thai Farm Culture."
     },
     {
       "title": "National Strategic and Business Analysis Competition (Winner)",
       "date": "2015",
-      "awarder": "Thailand",
+      "awarder": "Kasetsart University",
       "summary": "Project: Cost Analysis of Digital Platforms for Thai Agricultural Commodities."
     },
     {
       "title": "National Economics Competition (Winner)",
       "date": "2014",
-      "awarder": "Thailand",
+      "awarder": "Kasetsart University",
       "summary": "Project: Impacts of Technological Development on the Agricultural Market."
     },
     {
       "title": "National Economics and Business Plan Competition (First Runner-up)",
       "date": "2014",
-      "awarder": "Thailand",
+      "awarder": "Thailand Management Association, THA",
       "summary": "Project: Economic Impacts and Business Analysis for Thai Royal Projects - A Case Study of Doi Angkhang."
     }
   ],
   "skills": [
     {
-      "name": "Programming & Statistical Software",
+      "name": "Data Programming & Statistical Software",
       "icon": "fas fa-code",
-      "keywords": ["R", "STATA", "VBA", "GEMPACK", "Python", "SQL", "Matlab", "GAMS", "Julia"]
+      "levels": [
+        {
+          "level": "Expert",
+          "keywords": ["R", "STATA", "VBA", "GEMPACK", "Python"]
+        },
+        {
+          "level": "Advanced",
+          "keywords": ["SQL", "Matlab", "GAMS", "Julia", "SPSS", "JavaScript (Google Apps Script, Data Processing)"]
+        }
+      ]
     },
+    {
+      "name": "Markup & Web Technologies",
+      "icon": "fas fa-globe",
+      "description": "<strong style='color: var(--global-theme-color);'>Expert</strong>: 4+ years of comprehensive usage and real-world applications. <strong style='color: var(--global-theme-color);'>Advanced</strong>: Good working knowledge with hands-on experience in multiple projects. <strong style='color: var(--global-theme-color);'>Proficient</strong>: Comfortable with front-end technologies for structuring and styling content. <strong style='color: var(--global-theme-color);'>Intermediate</strong>: Basic knowledge in dynamic content and templating systems.",      
+      "levels": [
+        {
+          "level": "Proficient",
+          "keywords": ["HTML", "CSS", "XML"]
+        },
+        {
+          "level": "Intermediate",
+          "keywords": ["Liquid", "Jekyll", "Markdown"]
+        }
+      ]
+    }
+  ],
+  "interests": [
     {
       "name": "Research & Policy Analysis",
       "icon": "fas fa-book",
-      "keywords": ["CGE Modeling", "International Trade", "Policy Analysis", "Agricultural Economics"]
+      "keywords": [
+        "CGE Modeling",
+        "International Trade Policies",
+        "Tariff and Non-tariff Analysis",
+        "Structural Gravity Models"
+      ]
+    },
+    {
+      "name": "Business & Consulting",
+      "icon": "fas fa-chart-line",
+      "keywords": [
+        "Data-Driven Decision Making",
+        "FMCG",
+        "Technology in Business",
+        "Stock Market",
+        "Cryptocurrency"
+      ]
     }
   ],
   "languages": [
@@ -335,12 +379,14 @@
 ],
   "references": [
     {
-      "name": "<a href='https://www.gtap.agecon.purdue.edu/network/member_display.asp?UserID=415' target='_blank'>Dr. Dominique van der Mensbrugghe</a>",
-      "reference": "Director of GTAP & Research Professor, Agricultural Economics, Purdue University – PhD Research Advisor"
+      "name": "Dr. Dominique van der Mensbrugghe",
+      "reference": "Research Professor, Agricultural Economics, Purdue University, Former Director of GTAP – PhD Research Advisor",
+      "url": "https://www.gtap.agecon.purdue.edu/network/member_display.asp?UserID=415"
     },
     {
-      "name": "<a href='https://www.gtap.agecon.purdue.edu/network/member_display.asp?UserID=2958' target='_blank'>Dr. Erwin Corong</a>",
-      "reference": "Principal Research Economist and Associate Director, Center for Global Trade Analysis, Purdue University – PhD Research Advisor"
+      "name": "Dr. Erwin Corong",
+      "reference": "Principal Research Economist and Associate Director, Center for Global Trade Analysis, Purdue University – PhD Research Advisor",
+      "url": "https://www.gtap.agecon.purdue.edu/network/member_display.asp?UserID=2958"
     },
     {
       "name": "Dr. Nuchanata Mungkung",

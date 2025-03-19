@@ -2,7 +2,7 @@ $(document).ready(function () {
     // Initialize ScrollSpy
     $('body').scrollspy({
         target: 'nav[data-toggle="toc"]',
-        offset: 90 
+        offset: 90
     });
   
     // Smooth Scroll and Force ScrollSpy Update on Click
