@@ -408,7 +408,7 @@ ul.task-list input[type="checkbox"] {
 #search-toggle {
   padding: 0;
   border: 0;
-  background-color: var(--global-text-nav-color);
+  background-color: inherit;
   color: var(--global-text-nav-color);
 
   &:hover {
@@ -1120,7 +1120,7 @@ progress::-moz-progress-bar {
 
     &:not(.active) {
       background-color: var(--global-bg-color) !important;
-      color: var(--global-text-color);
+      color: var(--global-text-nav-color);
     }
 
     &:hover {
@@ -1135,7 +1135,7 @@ progress::-moz-progress-bar {
 
   .dropdown-item {
     background-color: var(--global-bg-color);
-    color: var(--global-text-color);
+    color: var(--global-text-nav-color);
 
     &:hover {
       color: var(--global-hover-color);
