@@ -36,7 +36,7 @@ I am a **Ph.D. candidate in Agricultural Economics at Purdue University** and a 
 
 With a strong foundation in **data analytics and econometrics**, I have worked extensively with **large datasets, predictive modeling, and economic simulations**, supporting both policy development and business strategy. My expertise spans **trade policy analysis, computational economics, and data programming**.
 
-Beyond academia, I serve as the **Chief Financial Officer & Head of Data Analytics** at AMATA Production Co., Ltd. Previously, I was a **Business Data Analyst at Unilever Thailand**, where I specialized in **market analytics, forecasting, and consumer behavior analysis**.
+Beyond academia,  I am a co-founder and serve as the **Chief Financial Officer & Head of Data Analytics** at AMATA Production Co., Ltd., Thailand. Previously, I was a **Business Data Analyst at Unilever Thailand**, where I specialized in **market analytics, forecasting, and consumer behavior analysis**.
 
 I am a proud recipient of the **prestigious Anandamahidol Foundation scholarship**, awarded by the Thai government. My work integrates **economic theory, big data analytics, and strategic insights**, driving informed decision-making in both research and industry.
 
