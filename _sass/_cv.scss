@@ -1,0 +1,335 @@
+/*****************************
+ * CV CORE STYLES
+ *****************************/
+
+// Base styling for the entire CV container
+.cv {
+  a {
+    color: var(--global-theme-color) !important;
+    text-decoration: none;
+    
+    &:hover {
+      color: var(--global-link-color) !important;
+      text-decoration: underline !important;
+    }
+  }
+
+  .faux-link {
+    color: var(--global-theme-color) !important;
+    cursor: default;
+    text-decoration: none;
+    font-weight: inherit;
+  }
+}      
+
+/*****************************
+ * HEADER & PDF ICON
+ *****************************/
+// PDF icon in the header
+.post-title a.float-right i.fa-file-pdf,
+.pdf-icon {
+  color: var(--global-theme-color) !important;
+}
+
+.post-title a.float-right:hover i.fa-file-pdf,
+.pdf-icon:hover {
+  color: #d9534f !important;
+  transform: scale(1.1);
+}
+
+/*****************************
+ * TABLE & CARD COMPONENTS
+ *****************************/
+
+// Base table styles for all CV tables
+table.table-cv {
+  background-color: transparent !important;
+  
+  td, th {
+    padding: 1px;
+  }
+}
+
+// Profile section table styling (basics section)
+table.table-cv-map {
+  // Field labels (left column)
+  td.font-weight-bold {
+    color: var(--global-text-secondary-color) !important;
+  }
+  
+  // Field values (right column)
+  td.text {
+    color: var(--global-text-secondary-color);
+    font-weight: normal !important;
+    
+    a {
+      color: var(--global-link-color) !important;
+      
+      &:hover {
+        color: var(--global-theme-color);
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Lists and items in cards
+.list-group-item {
+  // Section title styling (position/role)
+  .title {
+    font-weight: bold;
+  }
+  
+  // Organization/company name styling (second line)
+  .title + h6.ml-1.ml-md-4 {
+    color: var(--global-text-secondary-color);
+    font-weight: 600;
+  }
+  
+  // Description/department styling (third line)
+  .title + h6.ml-1.ml-md-4 + h6.ml-1.ml-md-4 {
+    color: var(--global-text-secondary-color);
+  }
+  
+  // Italic summary text
+  h6[style*="font-style: italic"] {
+    color: var(--global-text-secondary-color);
+    font-weight: normal;
+  }
+  
+  // Bullet points in all sections
+  ul.items li span.item {
+    color: var(--global-text-secondary-color);
+    font-weight: thin;
+  }
+}
+
+/*****************************
+ * DATE & LOCATION FORMATTING
+ *****************************/
+
+// Date badge styling (appears in most sections)
+.badge.font-weight-bold.danger-color-dark {
+  min-width: 75px;
+  // The danger-color-dark class handles the background color
+}
+
+// Location text under dates
+p.location {
+  font-size: 0.7rem;
+  white-space: nowrap;
+}
+
+// Location icon styling
+i.iconlocation {
+  color: var(--global-theme-color);
+  font-size: 0.8rem;
+}
+
+ /*****************************
+ * AUTHORS AND CO-AUTHORS STYLE
+ *****************************/
+
+  // Author styling in publications
+  .author-name {
+    font-weight: normal !important;
+    color: var(--global-text-secondary-color);
+  }
+  
+  // Self-author styling with underline
+  .self-author {
+    text-decoration: underline;
+    font-weight: normal !important;
+  }
+  
+  // Project metadata (publisher, role, published by, funded by)
+  .project-metadata {
+    color: var(--global-text-secondary-color);
+    font-weight: normal;
+    margin-bottom: 0.2rem;
+  }
+  
+  // Prefix for metadata fields (normal weight, same as surrounding text)
+  .metadata-prefix {
+    font-weight: normal;
+    color: inherit;
+  }
+  
+  // Value part of metadata fields
+  .metadata-value {
+    font-weight: normal;
+    color: inherit;
+  }
+
+/*****************************
+ * SKILLS & LIST GROUPS SECTION
+ *****************************/
+
+// Container for skills groups
+div.list-groups {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-content: center;
+}
+
+// Individual skill group
+div.list-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+// Skill category heading
+td.list-group-category {
+  font-weight: bold !important;
+  font-size: 1.15rem;
+  color: var(--global-theme-color);
+  margin-bottom: 0.5rem;
+}
+
+// Icon before skill category
+td.list-group-category-icon {
+  font-size: 0.8rem;
+  color: var(--global-theme-color);
+  width: 1.4rem;
+  padding-right: 0.4rem;
+}
+
+// Skill name/keyword
+td.list-group-name {
+  font-size: 1rem;
+  color: var(--global-text-secondary-color);
+}
+
+span.skill-level {
+  color: var(--global-text-secondary-color);
+  font-weight: 600;
+  font-style: italic;
+  margin-right: 0.5rem;
+  display: inline-block;
+  width: 120px;  /* Increased width to accommodate longer names */
+  min-width: 120px;
+}
+
+// For the longest skill level names
+.skill-level.long {
+  width: auto;  
+  min-width: 120px;
+}
+
+// Skill row container
+.skill-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.1rem;
+}
+
+// Skill keywords
+span.skill-keywords {
+  color: var(--global-text-secondary-color);
+  font-weight: normal;
+}
+
+// Skill description at bottom
+.skill-description {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--global-text-secondary-color);
+  text-align: left;
+  display: block;
+  max-width: 100%;
+  width: auto;
+}
+
+/*****************************
+ * BUTTONS & LINKS
+ *****************************/
+
+// Container for links
+div.container-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+// Button margin
+div.container-link-button {
+  margin-right: 0.5rem;
+}
+
+// CV buttons styling
+a.btncv {
+  color: var(--global-text-color);
+  border: 1px solid var(--global-text-color);
+  border-radius: 0.125rem;
+  padding: 0.25rem 1rem;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.7rem;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  white-space: nowrap;
+  
+  &:hover {
+    color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+    text-decoration: none;
+  }
+}
+
+/*****************************
+ * ANCHOR LINKS & TIMELINE
+ *****************************/
+
+// Section anchor links (for ToC navigation)
+a.anchor {
+  display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden;
+}
+
+// Timeline list container
+ul.timeline {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  
+  li {
+    position: relative;
+    min-height: 2.2rem;
+    color: var(--global-text-color);
+    list-style-position: inside;
+    
+    &::before {
+      content: "";
+      min-height: 2.5rem;
+      width: 1px;
+      background: var(--global-text-color);
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      left: 2px;
+      top: -0.5rem;
+    }
+  }
+}
+
+// TOC badge styling
+span.badge-toc {
+  color: var(--global-bg-color);
+  background-color: var(--global-theme-color);
+  border-radius: 0.125rem;
+  padding: 0.125rem 0.5rem;
+  font-weight: 800 !important;
+  display: inline-block;
+  inline-size: fit-content;
+}

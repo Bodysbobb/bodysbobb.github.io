@@ -1,0 +1,74 @@
+<ul class="card-text font-weight-light list-group list-group-flush">
+  {% assign publications = data[1] | sort: 'releaseDate' | reverse %}
+  {% for content in publications %}
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
+          {% if content.releaseDate %} {% assign date = content.releaseDate | split: '-' | join: '.' %} {% else %} {% assign date = '' %} {% endif %}
+          <table class="table-cv">
+            <tbody>
+              <tr>
+                <td>
+                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">{{ date }}</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+          <h6 class="title font-weight-bold ml-1 ml-md-4">
+            {% if content.url and content.url != "" %}
+              <a href="{{ content.url }}" target="_blank" rel="noopener noreferrer">{{ content.name }}</a>
+            {% else %}
+              <span class="faux-link">{{ content.name }}</span>
+            {% endif %}
+          </h6>
+          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-weight: normal !important;">
+            {% if content.authors %}
+              {% assign author_list = content.authors | split: "," %}
+              {% for author in author_list %}
+                {% assign trimmed_author = author | strip %}
+                {% assign author_name_parts = trimmed_author | split: " " %}
+                {% assign last_name_pos = author_name_parts.size | minus: 1 %}
+                {% assign last_name = author_name_parts[last_name_pos] %}
+                
+                {% assign first_name_initials = "" %}
+                {% for i in (0..last_name_pos) %}
+                  {% if i < last_name_pos %}
+                    {% assign name_part = author_name_parts[i] %}
+                    {% assign first_letter = name_part | slice: 0, 1 %}
+                    {% assign first_name_initials = first_name_initials | append: first_letter | append: "." %}
+                  {% endif %}
+                {% endfor %}
+                
+                {% assign formatted_author = last_name | append: ", " | append: first_name_initials %}
+                
+                {% assign first_name_parts_joined = "" %}
+                {% for i in (0..last_name_pos) %}
+                  {% if i < last_name_pos %}
+                    {% assign name_part = author_name_parts[i] %}
+                    {% if first_name_parts_joined != "" %}
+                      {% assign first_name_parts_joined = first_name_parts_joined | append: " " %}
+                    {% endif %}
+                    {% assign first_name_parts_joined = first_name_parts_joined | append: name_part %}
+                  {% endif %}
+                {% endfor %}
+                
+                {% if site.scholar.last_name contains last_name and site.scholar.first_name contains first_name_parts_joined %}
+                  <span class="self-author author-name">{{ formatted_author }}</span>
+                {% else %}
+                  <span class="author-name">{{ formatted_author }}</span>
+                {% endif %}
+                
+                {% unless forloop.last %}, {% endunless %}
+              {% endfor %}
+            {% else %}
+              {{ content.publisher }}
+            {% endif %}
+          </h6>
+          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ content.summary }}</h6>
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ul>

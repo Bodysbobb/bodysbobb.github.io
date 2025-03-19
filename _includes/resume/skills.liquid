@@ -1,0 +1,47 @@
+<div class="list-groups">
+  {% for content in data[1] %}
+    <div class="list-group col-md-12">
+      <table class="table-cv list-group-table">
+        <tbody>
+          <tr>
+            <!-- Skill Icon -->
+            {% if content.icon %}
+              <td class="list-group-category-icon">
+                <i class="{{ content.icon }}"></i>
+              </td>
+            {% else %}
+              <td class="list-group-category-icon"></td>
+            {% endif %}
+
+            <!-- Skill Name & Description (Aligned) -->
+            <td class="list-group-category">
+              <b>{{ content.name }}</b>
+              {% if content.description and content.description != "" %}
+                <div class="skill-description">
+                  <small><i>{{ content.description | strip }}</i></small>
+                </div>
+              {% endif %}
+            </td>
+          </tr>
+
+          <!-- Grouped Skills by Level in a Single Line -->
+          <tr>
+            <td></td>
+            <td class="list-group-keywords">
+              {% for level_group in content.levels %}
+                <div class="skill-row">
+                  {% assign level_length = level_group.level | size %}
+                  <span class="skill-level {% if level_length > 12 %}long{% endif %}">• <i>{{ level_group.level }}</i></span>
+                  <span class="skill-keywords">
+                    {{ level_group.keywords | join: " • " }}
+                  </span>
+                </div>
+              {% endfor %}
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  {% endfor %}
+</div>

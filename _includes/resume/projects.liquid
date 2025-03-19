@@ -1,0 +1,101 @@
+<ul class="card-text font-weight-light list-group list-group-flush">
+  {% for content in data[1] %}
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
+          {% if content.startDate %}
+            {% assign startDate = content.startDate | split: '-' | slice: 0, 2 | join: '.' %}
+            {% assign endDate = content.endDate | split: '-' | slice: 0, 2 | join: '.' | default: 'Present' %}
+            {% assign date = startDate | append: ' - ' %}
+            {% assign date = date | append: endDate %}
+            <table class="table-cv">
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 120px"> {{ date }} </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          {% endif %}
+        </div>
+        <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+          <h6 class="title font-weight-bold ml-1 ml-md-4">
+            {% if content.url and content.url != "" %}
+              <a href="{{ content.url }}" target="_blank" rel="noopener noreferrer">{{ content.name }}</a>
+            {% else %}
+              <span class="faux-link">{{ content.name }}</span>
+            {% endif %}
+          </h6>
+          
+          {% if content.authors %}
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-weight: normal !important; color: var(--global-text-secondary-color);">
+              {% assign author_list = content.authors | split: "," %}
+              {% for author in author_list %}
+                {% assign trimmed_author = author | strip %}
+                {% assign author_name_parts = trimmed_author | split: " " %}
+                {% assign last_name_pos = author_name_parts.size | minus: 1 %}
+                {% assign last_name = author_name_parts[last_name_pos] %}
+                
+                {% assign first_name_initials = "" %}
+                {% for i in (0..last_name_pos) %}
+                  {% if i < last_name_pos %}
+                    {% assign name_part = author_name_parts[i] %}
+                    {% assign first_letter = name_part | slice: 0, 1 %}
+                    {% assign first_name_initials = first_name_initials | append: first_letter | append: "." %}
+                  {% endif %}
+                {% endfor %}
+                
+                {% assign formatted_author = last_name | append: ", " | append: first_name_initials %}
+                
+                {% assign first_name_parts_joined = "" %}
+                {% for i in (0..last_name_pos) %}
+                  {% if i < last_name_pos %}
+                    {% assign name_part = author_name_parts[i] %}
+                    {% if first_name_parts_joined != "" %}
+                      {% assign first_name_parts_joined = first_name_parts_joined | append: " " %}
+                    {% endif %}
+                    {% assign first_name_parts_joined = first_name_parts_joined | append: name_part %}
+                  {% endif %}
+                {% endfor %}
+                
+                {% if site.scholar.last_name contains last_name and site.scholar.first_name contains first_name_parts_joined %}
+                  <span class="self-author author-name">{{ formatted_author }}</span>
+                {% else %}
+                  <span class="author-name">{{ formatted_author }}</span>
+                {% endif %}
+                
+                {% unless forloop.last %}, {% endunless %}
+              {% endfor %}
+            </h6>
+          {% endif %}
+          
+          {% if content.publisher %}
+            <h6 class="ml-1 ml-md-4 project-metadata" style="font-size: 0.95rem; color: var(--global-text-secondary-color);">{{ content.publisher }}</h6>
+          {% endif %}
+          
+          {% if content.role %}
+            <h6 class="ml-1 ml-md-4 project-metadata" style="font-size: 0.95rem; color: var(--global-text-secondary-color);">{{ content.role }}</h6>
+          {% endif %}
+          
+          {% if content.published %}
+            <h6 class="ml-1 ml-md-4 project-metadata" style="font-size: 0.95rem; color: var(--global-text-secondary-color);">{{ content.published }}</h6>
+          {% endif %}
+          
+          {% if content.sponsored %}
+            <h6 class="ml-1 ml-md-4 project-metadata" style="font-size: 0.95rem; color: var(--global-text-secondary-color);">{{ content.sponsored }}</h6>
+          {% endif %}
+          
+          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic; color: var(--global-text-secondary-color);">{{ content.summary }}</h6>
+          <ul class="items">
+            {% for item in content.highlights %}
+              <li>
+                <span class="item">{{ item }}</span>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ul>
