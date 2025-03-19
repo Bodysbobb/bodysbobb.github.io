@@ -7,13 +7,13 @@ first_name: Pattawee
 middle_name: 
 last_name: Puangchit
 contact_note: "<a href='mailto:ppuangch@purdue.edu'>ppuangch@purdue.edu</a>"
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
+description: "description: >
   Ph.D. Candidate | Trade Economist | Data Analyst | Entrepreneur. Specializing in trade policies, CGE modeling, economic analysis, and business strategy.
 footer_text: >
 #  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 #  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 #  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: international trade policies, trade economics, CGE modeling, economic analysis, Purdue University, trade policy, non-tariff researcher, GTAP, business owner, agricultural economics
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
