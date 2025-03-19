@@ -408,7 +408,7 @@ ul.task-list input[type="checkbox"] {
 #search-toggle {
   padding: 0;
   border: 0;
-  background-color: inherit;
+  background-color: var(--global-text-nav-color);
   color: var(--global-text-nav-color);
 
   &:hover {
