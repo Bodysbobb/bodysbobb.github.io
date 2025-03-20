@@ -14,6 +14,7 @@ on:
       - "**.liquid"
       - "**/*.md"
       - "**.yml"
+      - "_plugins/**"  # Added to ensure plugin changes trigger builds
       - "Gemfile"
       - "Gemfile.lock"
       - "!.github/workflows/axe.yml"
@@ -42,6 +43,7 @@ on:
       - "**.liquid"
       - "**/*.md"
       - "**.yml"
+      - "_plugins/**"  # Added to ensure plugin changes trigger builds
       - "Gemfile"
       - "Gemfile.lock"
       - "!.github/workflows/axe.yml"
@@ -86,6 +88,9 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
+      - name: Install Required Gems for BibTeX Processing 📚
+        run: |
+          gem install bibtex-ruby
       - name: Install and Build 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
