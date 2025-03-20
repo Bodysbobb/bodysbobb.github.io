@@ -87,7 +87,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Pattawee # blog_name will be displayed in your blog page
-blog_description: "Ph.D. Candidate | Trade Economist | Data Analyst | Entrepreneur. Specializing in trade policies, CGE modeling, economic analysis, and business strategy.""
+blog_description: "Ph.D. Candidate | Trade Economist | Data Analyst | Entrepreneur. Specializing in trade policies, CGE modeling, economic analysis, and business strategy."
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
