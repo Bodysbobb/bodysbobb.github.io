@@ -32,9 +32,12 @@ module Jekyll
         return
       end
       
-      # Load BibTeX file
+      # Load BibTeX file - do NOT modify the original BibTeX data
+      # Make a clean copy to avoid interfering with Jekyll Scholar
       begin
-        bibliography = BibTeX.open(bib_path)
+        # Read the file content directly to avoid sharing objects with Jekyll Scholar
+        bib_content = File.read(bib_path)
+        bibliography = BibTeX.parse(bib_content)
         Jekyll.logger.info "BibTeX to CV Sync:", "Loaded #{bibliography.length} publications from BibTeX"
       rescue => e
         Jekyll.logger.error "BibTeX to CV Sync:", "Failed to parse BibTeX file: #{e.message}"
@@ -57,7 +60,8 @@ module Jekyll
         
         # Extract title
         title = if entry.has_field?(:title)
-          entry[:title].to_s.gsub(/[{}]/, '')
+          # Clean title without modifying original entry
+          title_text = entry[:title].to_s.gsub(/[{}]/, '')
         else
           "Untitled"
         end
@@ -119,8 +123,7 @@ module Jekyll
           ""
         end
         
-        # Extract summary - MODIFIED as requested
-        # Only use note or generate based on type, don't use abstract
+        # Extract summary - only use note or generate based on type
         summary = if entry.has_field?(:note) && !entry[:note].to_s.empty?
           # Use note if available
           entry[:note].to_s
