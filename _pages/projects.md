@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Projects
+title: Portfolio
 permalink: /projects/
 description: My academic projects and business ventures are continuously growing. Please see all of my projects on this page!
 nav: true
