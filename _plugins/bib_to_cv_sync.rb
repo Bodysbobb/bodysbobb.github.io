@@ -4,7 +4,7 @@ require 'bibtex'
 
 module Jekyll
   class BibTeXToCVSync < Generator
-    safe false # We need to write to files
+    safe false # To write to files
     priority :low # Run after other generators
 
     def generate(site)
@@ -32,8 +32,7 @@ module Jekyll
         return
       end
       
-      # Load BibTeX file - do NOT modify the original BibTeX data
-      # Make a clean copy to avoid interfering with Jekyll Scholar
+      # Load BibTeX file - /_bibliography/papers.bib
       begin
         # Read the file content directly to avoid sharing objects with Jekyll Scholar
         bib_content = File.read(bib_path)
