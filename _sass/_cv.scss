@@ -8,12 +8,10 @@
     color: var(--global-theme-color) !important;
     font-weight: bold;
     text-decoration: none;
-    transition: font-size 0.15s ease-in-out, transform 0.15s ease-in-out; /* Subtle transition */
-
+    
     &:hover {
       color: var(--global-link-color) !important;
       text-decoration: underline !important;
-      font-size: 1.02em; /* Very slight increase */
     }
   }
 
@@ -27,19 +25,17 @@
 
 /* Link icon for URLs - Superscript Style */
 .link-icon {
-  font-size: 0.65rem; /* Default size */
+  font-size: 0.65rem; /* Make the icon smaller */
   color: var(--global-link-color);
-  vertical-align: super;
+  vertical-align: super; /* Position as superscript */
   position: relative;
   top: -0.3em; 
   opacity: 1;
   margin-left: 0.1rem;
-  transition: font-size 0.15s ease-in-out, transform 0.15s ease-in-out; /* Subtle transition */
 }
 
 a:hover .link-icon {
-  font-size: 0.7rem; /* Very slight increase */
-  transform: scale(1.05); /* Minimal scale effect */
+  opacity: 1;
 }
 
 /*****************************
