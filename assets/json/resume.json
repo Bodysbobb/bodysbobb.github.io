@@ -41,7 +41,7 @@
         "Building and managing the company's foundational business database system",
         "Developing analytics frameworks for business optimization"
       ]
-    },    
+    },
     {
       "name": "University of California, Davis",
       "position": "Graduate Teaching Assistant",
@@ -61,7 +61,7 @@
       "highlights": [
         "Utilized data-driven insights from global database such as the Nielsen database to enhance market strategies."
       ]
-    },    
+    },
     {
       "name": "True Corporation Public Company Limited",
       "position": "Business Data Analyst",
@@ -81,7 +81,7 @@
       "startDate": "2016",
       "endDate": "2018",
       "summary": "Developed and established the brand 'KAPIOKU' for agro-industry commodities, transforming research innovations into market-ready products for the institute."
-    }    
+    }
   ],
   "education": [
     {
@@ -108,7 +108,7 @@
         "Thesis: The Impact of the ASEAN Economic Community on Agricultural Trade",
         "Advisor: Richard Sexton"
       ]
-    },    
+    },
     {
       "institution": "Kasetsart University",
       "area": "Agricultural and Resource Economics",
@@ -125,22 +125,23 @@
   "publications": [
     {
       "name": "Modeling Non-Tariff Measures on ASEAN Region: A Dynamic-GTAP CGE Model",
+      "releaseDate": "2025",
       "authors": "Pattawee Puangchit",
-      "releaseDate": "Working paper",
-      "summary": "Expected June 2025"
+      "summary": "Working Paper",
+      "url": ""
     },
     {
       "name": "Impacts of Non-tariff Measures on ASEAN Trade: A Dynamic Approach",
-      "releaseDate": "2024-06",
+      "releaseDate": "2024",
       "authors": "Pattawee Puangchit, Erwin Corong",
-      "summary": "Conference Paper, presented at the 27th GTAP Annual Conference",
+      "summary": "Presented during the 27th Annual Conference",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_PHCgeIAAAAJ&citation_for_view=_PHCgeIAAAAJ:u5HHmVD_uO8C"
     },
     {
       "name": "The Impact of the ASEAN Economic Community on Agricultural Trade: Synthetic Control Method",
-      "releaseDate": "2021-05",
+      "releaseDate": "2021",
       "authors": "Pattawee Puangchit",
-      "summary": "Master Thesis",
+      "summary": "This study evaluates agricultural trade effects of the ASEAN Economic Community (AEC), established in 2015. Although the ASEAN community’s GDP has i...",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_PHCgeIAAAAJ&citation_for_view=_PHCgeIAAAAJ:u-x6o8ySG0sC"
     }
   ],
@@ -148,7 +149,11 @@
     {
       "name": "HARplus - R Package",
       "summary": "An R package designed to enhance the processing of GEMPACK .HAR and .SL4 files.",
-      "highlights": ["R Package", "GEMPACK", "GTAP"],
+      "highlights": [
+        "R Package",
+        "GEMPACK",
+        "GTAP"
+      ],
       "startDate": "2025-01",
       "endDate": "Present",
       "authors": "Pattawee Puangchit",
@@ -159,7 +164,11 @@
     {
       "name": "GTAPViz - R Package",
       "summary": "An R package for data visualization and automated data extraction from the GTAP static and dynamic models or other GEMPACK-based CGE models.",
-      "highlights": ["R package", "GEMPACK", "GTAP & GTAP-RD"],
+      "highlights": [
+        "R package",
+        "GEMPACK",
+        "GTAP & GTAP-RD"
+      ],
       "startDate": "2025-02",
       "endDate": "Present",
       "authors": "Pattawee Puangchit",
@@ -169,7 +178,10 @@
     {
       "name": "Economic Implications of U.S. Trade Policies (Tariff War) Using a CGE Model",
       "summary": "World Bank-funded project analyzing the economic impacts of Trump's trade policies under 12 different scenarios.",
-      "highlights": ["CGE model", "Trade policy analysis"],
+      "highlights": [
+        "CGE model",
+        "Trade policy analysis"
+      ],
       "startDate": "2024-09",
       "endDate": "2025-03",
       "authors": "Pattawee Puangchit, Erwin Corong, Maksym Chepeliev",
@@ -180,7 +192,10 @@
     {
       "name": "Economic Implications of the U.S.-Canada-Mexico Tariff War Using a CGE Model",
       "summary": "Brookings Institution-funded project analyzing the economic impacts of the U.S., Canada, and Mexico under a trade war.",
-      "highlights": ["CGE model", "Trade policy analysis"],
+      "highlights": [
+        "CGE model",
+        "Trade policy analysis"
+      ],
       "startDate": "2025-01",
       "endDate": "2025-03",
       "authors": "Pattawee Puangchit, Erwin Corong, Maksym Chepeliev",
@@ -298,11 +313,24 @@
       "levels": [
         {
           "level": "Expert",
-          "keywords": ["R", "STATA", "VBA", "GEMPACK", "Python"]
+          "keywords": [
+            "R",
+            "STATA",
+            "VBA",
+            "GEMPACK",
+            "Python"
+          ]
         },
         {
           "level": "Advanced",
-          "keywords": ["SQL", "Matlab", "GAMS", "Julia", "SPSS", "JavaScript (Google Apps Script, Data Processing)"]
+          "keywords": [
+            "SQL",
+            "Matlab",
+            "GAMS",
+            "Julia",
+            "SPSS",
+            "JavaScript (Google Apps Script, Data Processing)"
+          ]
         }
       ]
     },
@@ -312,16 +340,24 @@
       "levels": [
         {
           "level": "Proficient",
-          "keywords": ["HTML", "CSS", "XML"]
+          "keywords": [
+            "HTML",
+            "CSS",
+            "XML"
+          ]
         },
         {
           "level": "Intermediate",
-          "keywords": ["Liquid", "Jekyll", "Markdown"]
+          "keywords": [
+            "Liquid",
+            "Jekyll",
+            "Markdown"
+          ]
         }
       ]
     },
     {
-      "description": "<strong style='color: var(--global-theme-color);'>Expert</strong>: 4+ years of comprehensive usage and real-world applications. <strong style='color: var(--global-theme-color);'>Advanced</strong>: Good working knowledge with hands-on experience in multiple projects. <strong style='color: var(--global-theme-color);'>Proficient</strong>: Comfortable with front-end technologies for structuring and styling content. <strong style='color: var(--global-theme-color);'>Intermediate</strong>: Basic knowledge in dynamic content and templating systems."      
+      "description": "<strong style='color: var(--global-theme-color);'>Expert</strong>: 4+ years of comprehensive usage and real-world applications. <strong style='color: var(--global-theme-color);'>Advanced</strong>: Good working knowledge with hands-on experience in multiple projects. <strong style='color: var(--global-theme-color);'>Proficient</strong>: Comfortable with front-end technologies for structuring and styling content. <strong style='color: var(--global-theme-color);'>Intermediate</strong>: Basic knowledge in dynamic content and templating systems."
     }
   ],
   "interests": [
@@ -358,38 +394,38 @@
     }
   ],
   "volunteer": [
-  {
-    "organization": "Department of Economics and Business School, Kasetsart University",
-    "location": "Bangkok, Thailand",
-    "position": "Head of Young Alumni",
-    "startDate": "2017",
-    "endDate": "2019",
-    "summary": "Leading alumni engagement initiatives, mentoring students, and organizing career development programs.",
-    "highlights": []
-  },
-  {
-    "organization": "Kasetsart University",
-    "location": "Bangkok, Thailand",
-    "position": "Representative Speaker",
-    "startDate": "2017",
-    "endDate": "2020",
-    "summary": "Invited speaker for university events, sharing insights on career development and education reform.",
-    "highlights": [
-      "Topic: 'The Pathway to Success' published on Career Facts Website, Aug 2020.",
-      "Topic: 'Future of Thai Educational System and Online Classes' presented at the Kasetsart University Executive Conference, June 2020.",
-      "Topic: 'Inspiring High-School Students to Excel' presented at the Kasetsart University Laboratory School Annual Meeting (2017, 2018, 2019)."
-    ]
-  },
-  {
-    "organization": "Department of Economics, Kasetsart University",
-    "location": "Bangkok, Thailand",
-    "position": "President of Student Association",
-    "startDate": "2015",
-    "endDate": "2016",
-    "summary": "Led the student association in organizing academic and extracurricular activities, fostering student engagement, and representing student interests.",
-    "highlights": []
-  }
-],
+    {
+      "organization": "Department of Economics and Business School, Kasetsart University",
+      "location": "Bangkok, Thailand",
+      "position": "Head of Young Alumni",
+      "startDate": "2017",
+      "endDate": "2019",
+      "summary": "Leading alumni engagement initiatives, mentoring students, and organizing career development programs.",
+      "highlights": []
+    },
+    {
+      "organization": "Kasetsart University",
+      "location": "Bangkok, Thailand",
+      "position": "Representative Speaker",
+      "startDate": "2017",
+      "endDate": "2020",
+      "summary": "Invited speaker for university events, sharing insights on career development and education reform.",
+      "highlights": [
+        "Topic: 'The Pathway to Success' published on Career Facts Website, Aug 2020.",
+        "Topic: 'Future of Thai Educational System and Online Classes' presented at the Kasetsart University Executive Conference, June 2020.",
+        "Topic: 'Inspiring High-School Students to Excel' presented at the Kasetsart University Laboratory School Annual Meeting (2017, 2018, 2019)."
+      ]
+    },
+    {
+      "organization": "Department of Economics, Kasetsart University",
+      "location": "Bangkok, Thailand",
+      "position": "President of Student Association",
+      "startDate": "2015",
+      "endDate": "2016",
+      "summary": "Led the student association in organizing academic and extracurricular activities, fostering student engagement, and representing student interests.",
+      "highlights": []
+    }
+  ],
   "references": [
     {
       "name": "Dominique van der Mensbrugghe, Ph.D.",
@@ -412,5 +448,3 @@
     }
   ]
 }
-
-
