@@ -119,17 +119,11 @@ module Jekyll
           ""
         end
         
-        # Extract summary
-        summary = if entry.has_field?(:note)
+        # Extract summary - MODIFIED as requested
+        # Only use note or generate based on type, don't use abstract
+        summary = if entry.has_field?(:note) && !entry[:note].to_s.empty?
+          # Use note if available
           entry[:note].to_s
-        elsif entry.has_field?(:abstract) && !entry[:abstract].to_s.empty?
-          # Use a condensed version of abstract if available
-          abstract = entry[:abstract].to_s
-          if abstract.length > 150
-            "#{abstract[0..147]}..."
-          else
-            abstract
-          end
         elsif entry.type.to_s == 'mastersthesis'
           "Master Thesis"
         elsif entry.type.to_s == 'phdthesis'
@@ -141,7 +135,7 @@ module Jekyll
         elsif entry.has_field?(:journal)
           "Published in #{entry[:journal]}"
         else
-          ""
+          "" # Leave empty if no suitable content
         end
         
         # Extract URL
