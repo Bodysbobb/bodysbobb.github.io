@@ -184,4 +184,26 @@ layout: default
       </div>
     </article>
   </div>
+
+  <!-- Add link icons to all links in title elements -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Find all links in title elements within the CV
+      const titleLinks = document.querySelectorAll('.cv .title a[href], .cv td.list-group-category a[href], .cv .list-group-name a[href]');
+      
+      // Add link icon to each link that has a URL
+      titleLinks.forEach(function(link) {
+        // Skip if it already has the icon
+        if (!link.querySelector('.link-icon')) {
+          const icon = document.createElement('i');
+          icon.className = 'fa-solid fa-arrow-up-right-from-square link-icon';
+          link.appendChild(icon);
+          
+          // Make sure there's a space before the icon
+          const textNode = document.createTextNode(' ');
+          link.insertBefore(textNode, icon);
+        }
+      });
+    });
+  </script>
 {% endunless %}
