@@ -369,7 +369,7 @@ ul.task-list input[type="checkbox"] {
     display: block;
     width: 22px;
     height: 2px;
-    background-color: var(--global-text-nav-color);
+    background-color: var(--global-text-nav-color) !important;
     border-radius: 1px;
     margin-bottom: 4px;
     transition: all 0.2s;
@@ -1048,7 +1048,7 @@ progress {
   background-color: transparent;
 
   /* Progress bar value for IE10  */
-  color: var(--global-theme-color);
+  color: var(--global-progress-bar-color);
 }
 
 progress::-webkit-progress-bar {
@@ -1056,11 +1056,11 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-  background-color: var(--global-theme-color);
+  background-color: var(--global-progress-bar-color);
 }
 
 progress::-moz-progress-bar {
-  background-color: var(--global-theme-color);
+  background-color: var(--global-progress-bar-color);
 }
 
 .progress-container {
@@ -1074,7 +1074,7 @@ progress::-moz-progress-bar {
 }
 
 .progress-bar {
-  background-color: var(--global-theme-color);
+  background-color: var(--global-progress-bar-color);
   width: 0%;
   display: block;
   height: inherit;
@@ -1166,19 +1166,19 @@ nav[data-toggle="toc"] {
     font-size: 1rem;
 
     &:hover {
-      color: var(--global-hover-color);
-      border-left-color: var(--global-hover-color);
+      color: var(--global-link-color);
+      border-left-color: var(--global-link-color);
     }
   }
 
   .nav-link.active {
-    color: var(--global-theme-color);
-    border-left-color: var(--global-theme-color);
+    color: var(--global-link-color);
+    border-left-color: var(--global-link-color);
     font-size: 1rem;
 
     &:hover {
-      color: var(--global-hover-color);
-      border-left-color: var(--global-hover-color);
+      color: var(--global-link-color);
+      border-left-color: var(--global-link-color);
     }
   }
 }

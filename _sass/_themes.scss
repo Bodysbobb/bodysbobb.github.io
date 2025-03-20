@@ -8,6 +8,7 @@
 // Light Theme
 $color-bg-light: #F5F5F7;
 $color-code-bg-light: #ECECEC;
+$color-badge-bg-light: #ffffffe8;
 $color-text-light: #0056B3;
 $color-text-secondary-light: #4A6FA5;
 $color-theme-light: #0056B3;
@@ -21,16 +22,18 @@ $color-footer-bg-light: #E0E0E0;
 $color-footer-text-light: #005080;
 $color-footer-link-light: #FFFFFF;
 $color-badge-text-light: #FFFFFF;
+$color-progress-bar-light: #1C1C1C;
 
 // Dark Theme
-$color-bg-dark: #121212;
-$color-code-bg-dark: #1A1A1A;
+$color-bg-dark: #1C1C1C;
+$color-code-bg-dark: #2A2A2A;
+$color-badge-bg-dark: $grey-900;
 $color-text-dark: #E0E0E0;
 $color-text-secondary-dark: #B8B8B8;
 $color-theme-dark: #2080D0;
 $color-hover-dark: #50A5E6;
 $color-hover-text-dark: #FFFFFF;
-$color-text-nav-light: #FFFFFF;
+$color-text-nav-dark: #FFFFFF;
 $color-hover-nav-dark: #50A5E6;
 $link-color-dark: #50A5E6;
 $link-hover-color-dark: #00A3E0;
@@ -38,6 +41,7 @@ $color-footer-bg-dark: #222222;
 $color-footer-text-dark: #B0B0B0;
 $color-footer-link-dark: #E0E0E0;
 $color-badge-text-dark: #FFFFFF;
+$color-progress-bar-dark: #FFFFFF;
 
 // Global Color
 $color-nav: #0056B3;
@@ -62,10 +66,11 @@ $color-nav: #0056B3;
   --global-link-hover-color: #{$link-hover-color-light};
   --global-distill-app-color: #{$grey-color};
   --global-divider-color: rgba(0, 0, 0, 0.1);
-  --global-card-bg-color: #{$white-color};
+  --global-card-bg-color: #{$color-badge-bg-light};
   --global-highlight-color: #{$red-color-dark};
   --global-white-color: #{$white-color};  
   --global-badge-text-color: #{$color-badge-text-light};    
+  --global-progress-bar-color: #{$color-progress-bar-light};
   --global-back-to-top-bg-color: rgba(
     #{color.channel($black-color, "red", $space: rgb)},
     #{color.channel($black-color, "green", $space: rgb)},
@@ -132,7 +137,7 @@ html[data-theme="dark"] {
   --global-hover-color: #{$color-hover-dark};
   --global-hover-text-color: #{$color-hover-text-dark};
   --global-nav-color: #{$color-nav};
-  --global-text-nav-color: #{$color-text-nav-light};
+  --global-text-nav-color: #{$color-text-nav-dark};
   --global-hover-nav-color: #{$color-hover-nav-dark};
   --global-footer-bg-color: #{$color-footer-bg-dark};
   --global-footer-text-color: #{$color-footer-text-dark};
@@ -142,9 +147,10 @@ html[data-theme="dark"] {
   --global-distill-app-color: #E0E0E0; 
   --global-divider-color: #424246; 
   --global-divider-color: #424246;
-  --global-card-bg-color: #{$grey-900};
+  --global-card-bg-color: #{$color-badge-bg-dark};
   --global-white-color: #{$white-color};  
   --global-badge-text-color: #{$color-badge-text-dark}; 
+  --global-progress-bar-color: #{$color-progress-bar-dark};
   --global-back-to-top-bg-color: rgba(
     #{color.channel($white-color, "red", $space: rgb)},
     #{color.channel($white-color, "green", $space: rgb)},
