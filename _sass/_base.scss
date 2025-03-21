@@ -1515,3 +1515,15 @@ figure.cover {
 .card .card-title {
   font-weight: 700;
 }
+
+
+// Search box fixed in Ipad
+/* Hide Command+K text on tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #search-toggle::after,
+  #search-toggle .shortcut,
+  .ninja-keys-custom .ninja-keys__shortcut,
+  .ninja-keys-trigger-container .ninja-keys-trigger-shortcut {
+    display: none !important;
+  }
+}
