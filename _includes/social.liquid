@@ -92,6 +92,60 @@
       <a href="https://youtube.com/@{{ social[1] }}" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
     {% when 'zotero_username' %}
       <a href="https://www.zotero.org/{{ social[1] }}" title="Zotero"><i class="ai ai-zotero"></i></a>
+    {% when 'amata' %}
+      <a href="{{ social[1].url }}" title="{{ social[1].title }}">
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            const isDarkMode = document.documentElement.getAttribute('data-theme') === 'dark';
+            const amataImg = document.getElementById('amata-logo');
+            
+            if (isDarkMode) {
+              amataImg.setAttribute('src', "{{ '/assets/img/custom_logo/amata/AMATA_Logo_dk.svg' | relative_url }}");
+              amataImg.setAttribute('data-hover', "{{ '/assets/img/custom_logo/amata/AMATA_Logo_Hover_dk.svg' | relative_url }}");
+              amataImg.setAttribute('data-normal', "{{ '/assets/img/custom_logo/amata/AMATA_Logo_dk.svg' | relative_url }}");
+            } else {
+              amataImg.setAttribute('src', "{{ '/assets/img/custom_logo/amata/AMATA_Logo.svg' | relative_url }}");
+              amataImg.setAttribute('data-hover', "{{ '/assets/img/custom_logo/amata/AMATA_Logo_Hover.svg' | relative_url }}");
+              amataImg.setAttribute('data-normal', "{{ '/assets/img/custom_logo/amata/AMATA_Logo.svg' | relative_url }}");
+            }
+            
+            amataImg.addEventListener('mouseover', function() {
+              this.setAttribute('src', this.getAttribute('data-hover'));
+            });
+            
+            amataImg.addEventListener('mouseout', function() {
+              this.setAttribute('src', this.getAttribute('data-normal'));
+            });
+            
+            // Listen for theme changes
+            const observer = new MutationObserver(function(mutations) {
+              mutations.forEach(function(mutation) {
+                if (mutation.attributeName === 'data-theme') {
+                  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+                  if (isDark) {
+                    amataImg.setAttribute('src', "{{ '/assets/img/custom_logo/amata/AMATA_Logo_dk.svg' | relative_url }}");
+                    amataImg.setAttribute('data-hover', "{{ '/assets/img/custom_logo/amata/AMATA_Logo_Hover_dk.svg' | relative_url }}");
+                    amataImg.setAttribute('data-normal', "{{ '/assets/img/custom_logo/amata/AMATA_Logo_dk.svg' | relative_url }}");
+                  } else {
+                    amataImg.setAttribute('src', "{{ '/assets/img/custom_logo/amata/AMATA_Logo.svg' | relative_url }}");
+                    amataImg.setAttribute('data-hover', "{{ '/assets/img/custom_logo/amata/AMATA_Logo_Hover.svg' | relative_url }}");
+                    amataImg.setAttribute('data-normal', "{{ '/assets/img/custom_logo/amata/AMATA_Logo.svg' | relative_url }}");
+                  }
+                }
+              });
+            });
+            
+            observer.observe(document.documentElement, { attributes: true });
+          });
+        </script>
+        <img 
+          id="amata-logo"
+          src="{{ '/assets/img/custom_logo/amata/AMATA_Logo.svg' | relative_url }}"
+          alt="{{ social[1].title }}"
+          class="custom-logo"
+          style="margin-top: 12px;"
+        >
+      </a>
     {% else %}
       <a href="{{ social[1].url }}" title="{{ social[1].title }}">
         {% assign file_ext = social[1].logo | split: '.' | last %}
