@@ -1,0 +1,450 @@
+{
+  "basics": {
+    "Name": "Pattawee Puangchit",
+    "image": "/assets/img/profile_pic.png",
+    "Email": "ppuangch@purdue.edu",
+    "CV": "<a href='/assets/pdf/Pattawee_Puangchit_CV.pdf' target='_blank'>Pattawee's CV</a>",
+    "Interest": "Experienced data analyst with 6+ years of expertise in both academic research and the private sector, including global corporations and entrepreneurial ventures. Passionate about applying data-driven insights to international trade, business strategy, and economic policy analysis.",
+    "location": {
+      "address": "KRAN #634, Department of Agricultural Economics, Purdue University",
+      "postalCode": "47907-2056",
+      "city": "West Lafayette",
+      "countryCode": "US",
+      "region": "Indiana"
+    }
+  },
+  "work": [
+    {
+      "name": "Center for Global Trade Analysis (GTAP)",
+      "position": "Graduate Research Assistant",
+      "location": "West Lafayette, IN, USA",
+      "startDate": "2021",
+      "endDate": "Present",
+      "url": "https://www.gtap.agecon.purdue.edu/network/member_display.asp?UserID=37552",
+      "summary": "Working under the supervision of Dr. Dominique van der Mensbrugghe and Dr. Erwin Corong.",
+      "highlights": [
+        "Lead analyst for World Bank-funded research on U.S. Trade Policies (Tariff War) using CGE Model",
+        "Lead analyst for Brookings Institute-funded research on USA-Canada-Mexico Trade War using CGE Model",
+        "Contributing to GTAP 11 and 12 Data Base development",
+        "Developing dynamic approaches to model Non-Tariff Measures"
+      ]
+    },
+    {
+      "name": "AMATA Production Co., Ltd.",
+      "position": "Co-Founder & Head of Data Analytics",
+      "location": "Songkhla, Thailand",
+      "startDate": "2021",
+      "endDate": "Present",
+      "url": "https://bodysbobb.github.io/projects/AMATAProduction/",
+      "summary": "Co-founded a Thai local brand-building company with a registered capital of $300,000 USD, specializing in printing materials, custom apparel, and online marketing solutions.",
+      "highlights": [
+        "Building and managing the company's foundational business database system",
+        "Developing analytics frameworks for business optimization"
+      ]
+    },
+    {
+      "name": "University of California, Davis",
+      "position": "Graduate Teaching Assistant",
+      "location": "Davis, CA, USA",
+      "startDate": "2020",
+      "endDate": "2021",
+      "url": null,
+      "summary": "Course with Dr. Julian Alston: Welfare Analysis of Agricultural Policies"
+    },
+    {
+      "name": "Unilever Thailand",
+      "position": "Market Data Analyst",
+      "location": "Bangkok, Thailand",
+      "startDate": "2019-01",
+      "endDate": "2019-08",
+      "summary": "Participated in the Future Leaders' Program, working with the Food Retail Team (Knorr).",
+      "highlights": [
+        "Utilized data-driven insights from global database such as the Nielsen database to enhance market strategies."
+      ]
+    },
+    {
+      "name": "True Corporation Public Company Limited",
+      "position": "Business Data Analyst",
+      "location": "Bangkok, Thailand",
+      "startDate": "2018",
+      "endDate": "2019",
+      "summary": "Analyzed business data to support strategic decision-making.",
+      "highlights": [
+        "Conducted market analysis for telecommunications sector",
+        "Developed reporting dashboards for executive decision-making"
+      ]
+    },
+    {
+      "name": "Agricultural and Agro-Industrial Product Improvement Institute, Kasetsart University",
+      "position": "Business Development Specialist",
+      "location": "Bangkok, Thailand",
+      "startDate": "2016",
+      "endDate": "2018",
+      "summary": "Developed and established the brand 'KAPIOKU' for agro-industry commodities, transforming research innovations into market-ready products for the institute."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Purdue University",
+      "area": "Agricultural Economics",
+      "studyType": "Ph.D.",
+      "location": "West Lafayette, IN, USA",
+      "url": "https://ag.purdue.edu/directory/ppuangch",
+      "startDate": "2021",
+      "endDate": "Expected 2025",
+      "courses": [
+        "Dissertation: Incorporating Non-tariff Measures to Dynamic CGE Model",
+        "Advisor: Dr. Dominique van der Mensbrugghe"
+      ]
+    },
+    {
+      "institution": "University of California, Davis",
+      "area": "Agricultural and Resource Economics",
+      "location": "Davis, CA, USA",
+      "studyType": "M.S.",
+      "startDate": "2019",
+      "endDate": "2021",
+      "courses": [
+        "Thesis: The Impact of the ASEAN Economic Community on Agricultural Trade",
+        "Advisor: Richard Sexton"
+      ]
+    },
+    {
+      "institution": "Kasetsart University",
+      "area": "Agricultural and Resource Economics",
+      "studyType": "B.S.",
+      "location": "Bangkok, Thailand",
+      "startDate": "2013",
+      "endDate": "2016",
+      "courses": [
+        "Graduated summa cum laude",
+        "Valedictorian, Department of Economics"
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "name": "Modeling Non-Tariff Measures on ASEAN Region: A Dynamic-GTAP CGE Model",
+      "releaseDate": "2025",
+      "authors": "Pattawee Puangchit",
+      "summary": "Working Paper",
+      "url": ""
+    },
+    {
+      "name": "Impacts of Non-tariff Measures on ASEAN Trade: A Dynamic Approach",
+      "releaseDate": "2024",
+      "authors": "Pattawee Puangchit, Erwin Corong",
+      "summary": "Presented during the 27th Annual Conference",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_PHCgeIAAAAJ&citation_for_view=_PHCgeIAAAAJ:u5HHmVD_uO8C"
+    },
+    {
+      "name": "The Impact of the ASEAN Economic Community on Agricultural Trade: Synthetic Control Method",
+      "releaseDate": "2021",
+      "authors": "Pattawee Puangchit",
+      "summary": "Master Thesis",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_PHCgeIAAAAJ&citation_for_view=_PHCgeIAAAAJ:u-x6o8ySG0sC"
+    }
+  ],
+  "projects": [
+    {
+      "name": "HARplus - R Package",
+      "summary": "An R package designed to enhance the processing of GEMPACK .HAR and .SL4 files.",
+      "highlights": [
+        "R Package",
+        "GEMPACK",
+        "GTAP"
+      ],
+      "startDate": "2025-01",
+      "endDate": "Present",
+      "authors": "Pattawee Puangchit",
+      "role": "Role: Author and Maintainer",
+      "publisher": "Published by: CRAN Package",
+      "url": "https://cran.r-project.org/web/packages/HARplus/index.html"
+    },
+    {
+      "name": "GTAPViz - R Package",
+      "summary": "An R package for data visualization and automated data extraction from the GTAP static and dynamic models or other GEMPACK-based CGE models.",
+      "highlights": [
+        "R package",
+        "GEMPACK",
+        "GTAP & GTAP-RD"
+      ],
+      "startDate": "2025-02",
+      "endDate": "Present",
+      "authors": "Pattawee Puangchit",
+      "role": "Role: Author and Maintainer",
+      "url": "https://bodysbobb.github.io/GTAPViz/"
+    },
+    {
+      "name": "Economic Implications of U.S. Trade Policies (Tariff War) Using a CGE Model",
+      "summary": "World Bank-funded project analyzing the economic impacts of Trump's trade policies under 12 different scenarios.",
+      "highlights": [
+        "CGE model",
+        "Trade policy analysis"
+      ],
+      "startDate": "2024-09",
+      "endDate": "2025-03",
+      "authors": "Pattawee Puangchit, Erwin Corong, Maksym Chepeliev",
+      "role": "Role: Lead Researcher",
+      "sponsored": "Commissioned by: World Bank",
+      "url": ""
+    },
+    {
+      "name": "Economic Implications of the U.S.-Canada-Mexico Tariff War Using a CGE Model",
+      "summary": "Brookings Institution-funded project analyzing the economic impacts of the U.S., Canada, and Mexico under a trade war.",
+      "highlights": [
+        "CGE model",
+        "Trade policy analysis"
+      ],
+      "startDate": "2025-01",
+      "endDate": "2025-03",
+      "authors": "Pattawee Puangchit, Erwin Corong, Maksym Chepeliev",
+      "role": "Role: Lead Researcher",
+      "sponsored": "Commissioned by: Brookings Institution",
+      "url": "https://www.brookings.edu/articles/trumps-25-tariffs-on-canada-and-mexico-will-be-a-blow-to-all-3-economies/"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "GTAP Dynamic Short Course Certificate",
+      "date": "2025-03",
+      "issuer": "Center for Global Trade Analysis (GTAP)",
+      "url": "https://www.gtap.agecon.purdue.edu/events/Dynamic_Courses/2025/",
+      "description": "Three-month intensive course on Recursive GTAP Dynamic modeling techniques, with a group project focused on trade policy."
+    },
+    {
+      "name": "31st Annual Short Course in Global Trade Analysis",
+      "date": "2024-08",
+      "issuer": "Center for Global Trade Analysis (GTAP)",
+      "url": "https://www.gtap.agecon.purdue.edu/events/Short_Courses/2024/",
+      "description": "Served as an instructor for the Theory and Applications of Computable General Equilibrium Analysis using the GTAP Model."
+    }
+  ],
+  "awards": [
+    {
+      "title": "Anandamahidol Foundation Scholarship",
+      "date": "2019",
+      "awarder": "The King and Thai Government",
+      "summary": "Highly prestigious and fully funded scholarship ($60,000 per year), awarded annually to fewer than six exceptional scholars for graduate studies abroad."
+    },
+    {
+      "title": "Mizuho Financial Group Scholarship",
+      "date": "2013-2017",
+      "awarder": "Mizuho Financial Group",
+      "summary": "Awarded $6,000 per year for academic excellence."
+    },
+    {
+      "title": "Bhumibol Adulyadej Scholarship",
+      "date": "2016",
+      "awarder": "Thai Government",
+      "summary": "Awarded $1,500 for outstanding academic performance."
+    },
+    {
+      "title": "Distinguished Alumni",
+      "date": "2018",
+      "awarder": "Kasetsart University Laboratory School"
+    },
+    {
+      "title": "Valedictorian",
+      "date": "2017",
+      "awarder": "Department of Economics, Kasetsart University"
+    },
+    {
+      "title": "Outstanding Student Awards: Role Model Students",
+      "date": "2017",
+      "awarder": "Kasetsart University",
+      "summary": "Awarded to less than 1% of students who have won all outstanding awards."
+    },
+    {
+      "title": "Outstanding Student Awards: Creative and Innovative Student Researchers",
+      "date": "2013-2016",
+      "awarder": "Kasetsart University"
+    },
+    {
+      "title": "Outstanding Student Awards: Behavior and Conduct",
+      "date": "2015",
+      "awarder": "Kasetsart University"
+    },
+    {
+      "title": "Outstanding Student Awards: Social Activists",
+      "date": "2015-2016",
+      "awarder": "Kasetsart University"
+    },
+    {
+      "title": "Charoen Pokphand Group Scholarship",
+      "date": "2014",
+      "awarder": "Charoen Pokphand Group"
+    },
+    {
+      "title": "The 22nd Strategic and Economic Competition (Winner)",
+      "date": "2016",
+      "awarder": "Kasetsart University",
+      "summary": "Project: Consumer Behavioral Analysis for Thai Local Ice Cream."
+    },
+    {
+      "title": "National Business Plan Competition (First Runner-up)",
+      "date": "2016",
+      "awarder": "Kasetsart University",
+      "summary": "Project: Business Model for Ecotourism - Travel and Study of Thai Farm Culture."
+    },
+    {
+      "title": "National Strategic and Business Analysis Competition (Winner)",
+      "date": "2015",
+      "awarder": "Kasetsart University",
+      "summary": "Project: Cost Analysis of Digital Platforms for Thai Agricultural Commodities."
+    },
+    {
+      "title": "National Economics Competition (Winner)",
+      "date": "2014",
+      "awarder": "Kasetsart University",
+      "summary": "Project: Impacts of Technological Development on the Agricultural Market."
+    },
+    {
+      "title": "National Economics and Business Plan Competition (First Runner-up)",
+      "date": "2014",
+      "awarder": "Thailand Management Association, THA",
+      "summary": "Project: Economic Impacts and Business Analysis for Thai Royal Projects - A Case Study of Doi Angkhang."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Data Programming & Statistical Software",
+      "icon": "fas fa-code",
+      "levels": [
+        {
+          "level": "Expert",
+          "keywords": [
+            "R",
+            "STATA",
+            "VBA",
+            "GEMPACK",
+            "Python"
+          ]
+        },
+        {
+          "level": "Advanced",
+          "keywords": [
+            "SQL",
+            "Matlab",
+            "GAMS",
+            "Julia",
+            "SPSS",
+            "JavaScript (Google Apps Script, Data Processing)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Markup & Web Technologies",
+      "icon": "fas fa-globe",
+      "levels": [
+        {
+          "level": "Proficient",
+          "keywords": [
+            "HTML",
+            "CSS",
+            "XML"
+          ]
+        },
+        {
+          "level": "Intermediate",
+          "keywords": [
+            "Liquid",
+            "Jekyll",
+            "Markdown"
+          ]
+        }
+      ]
+    },
+    {
+      "description": "<strong style='color: var(--global-theme-color);'>Expert</strong>: 4+ years of comprehensive usage and real-world applications. <strong style='color: var(--global-theme-color);'>Advanced</strong>: Good working knowledge with hands-on experience in multiple projects. <strong style='color: var(--global-theme-color);'>Proficient</strong>: Comfortable with front-end technologies for structuring and styling content. <strong style='color: var(--global-theme-color);'>Intermediate</strong>: Basic knowledge in dynamic content and templating systems."
+    }
+  ],
+  "interests": [
+    {
+      "name": "Research & Policy Analysis",
+      "icon": "fas fa-book",
+      "keywords": [
+        "CGE Modeling",
+        "International Trade Policies",
+        "Tariff and Non-tariff Analysis",
+        "Structural Gravity Models"
+      ]
+    },
+    {
+      "name": "Business & Consulting",
+      "icon": "fas fa-chart-line",
+      "keywords": [
+        "Data-Driven Decision Making",
+        "FMCG",
+        "Technology in Business",
+        "Stock Market",
+        "Cryptocurrency"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Thai",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Department of Economics and Business School, Kasetsart University",
+      "location": "Bangkok, Thailand",
+      "position": "Head of Young Alumni",
+      "startDate": "2017",
+      "endDate": "2019",
+      "summary": "Leading alumni engagement initiatives, mentoring students, and organizing career development programs.",
+      "highlights": []
+    },
+    {
+      "organization": "Kasetsart University",
+      "location": "Bangkok, Thailand",
+      "position": "Representative Speaker",
+      "startDate": "2017",
+      "endDate": "2020",
+      "summary": "Invited speaker for university events, sharing insights on career development and education reform.",
+      "highlights": [
+        "Topic: 'The Pathway to Success' published on Career Facts Website, Aug 2020.",
+        "Topic: 'Future of Thai Educational System and Online Classes' presented at the Kasetsart University Executive Conference, June 2020.",
+        "Topic: 'Inspiring High-School Students to Excel' presented at the Kasetsart University Laboratory School Annual Meeting (2017, 2018, 2019)."
+      ]
+    },
+    {
+      "organization": "Department of Economics, Kasetsart University",
+      "location": "Bangkok, Thailand",
+      "position": "President of Student Association",
+      "startDate": "2015",
+      "endDate": "2016",
+      "summary": "Led the student association in organizing academic and extracurricular activities, fostering student engagement, and representing student interests.",
+      "highlights": []
+    }
+  ],
+  "references": [
+    {
+      "name": "Dominique van der Mensbrugghe, Ph.D.",
+      "reference": "Research Professor, Agricultural Economics, Purdue University, Former Director of GTAP – PhD Research Advisor",
+      "url": "https://www.gtap.agecon.purdue.edu/network/member_display.asp?UserID=415"
+    },
+    {
+      "name": "Erwin Corong, Ph.D.",
+      "reference": "Principal Research Economist and Associate Director, Center for Global Trade Analysis, Purdue University – PhD Research Advisor",
+      "url": "https://www.gtap.agecon.purdue.edu/network/member_display.asp?UserID=2958"
+    },
+    {
+      "name": "Richard Sexton, Ph.D.",
+      "reference": "Distinguished Professor, Agricultural and Resource Economics, University of California, Davis – M.S. Research Advisor",
+      "url": "https://are.ucdavis.edu/people/faculty/richard-sexton/"
+    },
+    {
+      "name": "Nuchanata Mungkung, Ph.D.",
+      "reference": "Vice President for Finance and Asset Management, Kasetsart University; Former Dean of Agricultural and Resource Economics – Served as Bachelor’s Dean during my tenure as President of the Student Association"
+    }
+  ]
+}
