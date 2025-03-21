@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+  <defs>
+    <style>
+      .st0 { fill: #62B1F0; }
+      .st1 { fill: #62B1F0; }
+      .st2 { fill: #62B1F0; }
+    </style>
+  </defs>
+  <g transform="scale(0.64, 0.64)"> <!-- Scale factor applied to fit 192x192 -->
+    <polygon class="st2" points="22.39 221.03 34.46 221.03 12.06 259.81 0 259.82 22.39 221.03"/>
+    <polygon class="st0" points="34.46 221.03 22.39 221.03 44.79 259.81 56.85 259.82 34.46 221.03"/>
+    <polygon class="st2" points="159.53 221.03 171.59 221.03 149.19 259.81 137.13 259.82 159.53 221.03"/>
+    <polygon class="st0" points="171.59 221.03 159.53 221.03 181.93 259.81 193.98 259.82 171.59 221.03"/>
+    <polygon class="st2" points="265.54 221.03 277.61 221.03 255.21 259.81 243.15 259.82 265.54 221.03"/>
+    <polygon class="st0" points="277.61 221.03 265.54 221.03 287.94 259.81 300 259.82 277.61 221.03"/>
+    <polygon class="st0" points="80.73 221.03 68.67 221.03 91.07 259.81 103.13 259.82 80.73 221.03"/>
+    <rect class="st2" x="68.67" y="221.03" width="11.2" height="38.79"/>
+    <polygon class="st2" points="113.46 221.03 125.52 221.03 103.12 259.81 91.07 259.82 113.46 221.03"/>
+    <rect class="st0" x="114.32" y="221.03" width="11.2" height="38.79" transform="translate(239.85 480.84) rotate(-180)"/>
+    <rect class="st0" x="213.12" y="221.03" width="11.2" height="38.79" transform="translate(437.44 480.84) rotate(-180)"/>
+    <rect class="st2" x="213.51" y="201.82" width="10.43" height="48.85" transform="translate(-7.52 444.96) rotate(-90)"/>
+  </g>
+  <g transform="scale(0.64, 0.64)">
+    <polygon class="st2" points="150.03 110.57 173.34 151.06 150.04 191.43 39.62 191.43 62.93 151.06 126.66 151.06 150.03 110.57"/>
+    <polygon class="st0" points="181.84 55.28 158.45 95.8 190.38 151.06 167.08 191.43 260.45 191.43 181.84 55.28"/>
+    <polygon class="st1" points="118.12 136.21 173.34 40.55 150.04 .18 71.5 136.21 118.12 136.21"/>
+  </g>
+</svg>

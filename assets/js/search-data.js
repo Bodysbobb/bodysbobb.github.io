@@ -68,8 +68,8 @@ ninja.data = [{id: "news-trump-s-25-tariff-on-canda-and-mexico",
           window.open("https://gtap.agecon.purdue.edu/network/member_display.asp?UserID=37552", "_blank");
         },
       },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
+        id: 'social-amata',
+        title: 'Amata',
         section: 'Socials',
         handler: () => {
           window.open("https://bodysbobb.github.io/projects/AMATAProduction/", "_blank");
