@@ -1,0 +1,94 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data Table</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.4.1/css/responsive.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.3.2/css/fixedHeader.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <style>
+        /* Additional custom styles */
+        table.dataTable th {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        table.dataTable td {
+            border-bottom: 1px solid var(--global-divider-color);
+            font-family: Arial, sans-serif;
+        }
+        /* Custom alignment classes */
+        .text-left {
+            text-align: left !important;
+        }
+        .text-right {
+            text-align: right !important;
+        }
+        /* Override DataTables default alignment */
+        table.dataTable thead th.text-left,
+        table.dataTable tbody td.text-left {
+            text-align: left !important;
+        }
+        table.dataTable thead th.text-right,
+        table.dataTable tbody td.text-right {
+            text-align: right !important;
+        }
+        /* Fixed header styling */
+        .dataTables_scrollHead {
+            background-color: white;
+            z-index: 100;
+        }
+        </style>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/fixedheader/3.3.2/js/dataTables.fixedHeader.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            
+            
+            <table id="data-table" class="display responsive nowrap" style="width:100%">
+                <thead>
+                    <tr>
+                        <th class="text-left">Region</th><th class="text-right">Value</th><th class="text-left">Variable</th><th class="text-left">Experiment</th><th class="text-left">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="text-left">MDG</td><td class="text-right">0.63%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">XAC</td><td class="text-right">0.62%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">MEX</td><td class="text-right">0.52%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">CAN</td><td class="text-right">0.48%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">XNA</td><td class="text-right">0.42%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">VNM</td><td class="text-right">0.36%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">LKA</td><td class="text-right">0.36%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">XEF</td><td class="text-right">0.34%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">MUS</td><td class="text-right">0.29%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">IND</td><td class="text-right">0.21%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">XEC</td><td class="text-right">0.20%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">CHE</td><td class="text-right">0.18%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">TWN</td><td class="text-right">0.17%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">THA</td><td class="text-right">0.17%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">MOZ</td><td class="text-right">0.16%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">KAZ</td><td class="text-right">0.16%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">IDN</td><td class="text-right">0.14%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">CMR</td><td class="text-right">0.14%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">ZWE</td><td class="text-right">0.14%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">PAK</td><td class="text-right">0.14%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">XSE</td><td class="text-right">0.11%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">MYS</td><td class="text-right">0.11%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">SGP</td><td class="text-right">0.10%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">NGA</td><td class="text-right">0.10%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">MWI</td><td class="text-right">0.09%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">SRB</td><td class="text-right">0.09%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">USA</td><td class="text-right">0.08%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">ZMB</td><td class="text-right">0.08%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">LAO</td><td class="text-right">0.05%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">TUN</td><td class="text-right">0.05%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">JOR</td><td class="text-right">0.03%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">ZAF</td><td class="text-right">0.03%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">BGD</td><td class="text-right">0.02%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">NAM</td><td class="text-right">0.01%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">ARE</td><td class="text-right">0.01%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">HKG</td><td class="text-right">0.01%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">EU27</td><td class="text-right">0.00%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">KOR</td><td class="text-right">-0.00%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">CHN</td><td class="text-right">-0.01%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">ISR</td><td class="text-right">-0.01%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">BWA</td><td class="text-right">-0.02%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">PHL</td><td class="text-right">-0.02%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">ROW</td><td class="text-right">-0.03%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">NOR</td><td class="text-right">-0.03%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">JPN</td><td class="text-right">-0.03%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">GBR</td><td class="text-right">-0.04%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">BRN</td><td class="text-right">-0.05%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">GNQ</td><td class="text-right">-0.06%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">TCD</td><td class="text-right">-0.07%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">DZA</td><td class="text-right">-0.09%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">IRQ</td><td class="text-right">-0.17%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">XNF</td><td class="text-right">-0.20%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">KHM</td><td class="text-right">-0.33%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">NIC</td><td class="text-right">-0.42%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr><tr><td class="text-left">SYR</td><td class="text-right">-0.49%</td><td class="text-left">wagediff</td><td class="text-left">US_All</td><td class="text-left">Wage Differentials</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <script>
+        $(document).ready(function() {
+            // Initialize DataTable with options
+            var dataTable = $('#data-table').DataTable({"responsive": true, "pageLength": 25, "lengthMenu": [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]], "order": [1, "desc"], "scrollX": true, "autoWidth": true, "dom": "<\"top\"lf>rt<\"bottom\"ip><\"clear\">", "scrollY": "500px", "scrollCollapse": true, "paging": true});
+            
+            // Add custom class handling
+            dataTable.on('draw', function() {
+                // Handle column headers classes
+                dataTable.columns().header().each(function(header, index) {
+                    var originalClass = $(header).attr('class');
+                    if (originalClass && originalClass.indexOf('text-') !== -1) {
+                        $(header).removeClass('dt-head-center').addClass(originalClass);
+                    }
+                });
+                
+                // Handle cell classes
+                $('#data-table tbody td').each(function() {
+                    var originalClass = $(this).attr('class');
+                    if (originalClass && originalClass.indexOf('text-') !== -1) {
+                        $(this).removeClass('dt-body-center').addClass(originalClass);
+                    }
+                });
+            });
+            
+            // Initialize FixedHeader\nnew $.fn.dataTable.FixedHeader(dataTable);
+        });
+        </script>
+    </body>
+    </html>
+    

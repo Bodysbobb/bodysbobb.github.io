@@ -1,0 +1,94 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data Table</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.4.1/css/responsive.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.3.2/css/fixedHeader.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <style>
+        /* Additional custom styles */
+        table.dataTable th {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        table.dataTable td {
+            border-bottom: 1px solid var(--global-divider-color);
+            font-family: Arial, sans-serif;
+        }
+        /* Custom alignment classes */
+        .text-left {
+            text-align: left !important;
+        }
+        .text-right {
+            text-align: right !important;
+        }
+        /* Override DataTables default alignment */
+        table.dataTable thead th.text-left,
+        table.dataTable tbody td.text-left {
+            text-align: left !important;
+        }
+        table.dataTable thead th.text-right,
+        table.dataTable tbody td.text-right {
+            text-align: right !important;
+        }
+        /* Fixed header styling */
+        .dataTables_scrollHead {
+            background-color: white;
+            z-index: 100;
+        }
+        </style>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/fixedheader/3.3.2/js/dataTables.fixedHeader.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            
+            
+            <table id="data-table" class="display responsive nowrap" style="width:100%">
+                <thead>
+                    <tr>
+                        <th class="text-left">Country Name</th><th class="text-left">ISO Code</th><th class="text-left">Reciprocal Tariff</th><th class="text-left">Retaliatory Rate</th><th class="text-left">Import Share</th><th class="text-left">Export Share</th><th class="text-left">Total Trade</th><th class="text-left">Trade Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="text-left">Indonesia</td><td class="text-left">IDN</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.86%</td><td class="text-left">0.49%</td><td class="text-left">$38.28B</td><td class="text-left">$-17.88B</td></tr><tr><td class="text-left">Cambodia</td><td class="text-left">KHM</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.39%</td><td class="text-left">0.02%</td><td class="text-left">$12.98B</td><td class="text-left">$-12.34B</td></tr><tr><td class="text-left">Lao People's Democratic Republic</td><td class="text-left">LAO</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.02%</td><td class="text-left">0.00%</td><td class="text-left">$0.84B</td><td class="text-left">$-0.76B</td></tr><tr><td class="text-left">Malaysia</td><td class="text-left">MYS</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">1.61%</td><td class="text-left">1.34%</td><td class="text-left">$80.23B</td><td class="text-left">$-24.83B</td></tr><tr><td class="text-left">Philippines</td><td class="text-left">PHL</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.43%</td><td class="text-left">0.45%</td><td class="text-left">$23.48B</td><td class="text-left">$-4.88B</td></tr><tr><td class="text-left">Singapore</td><td class="text-left">SGP</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">1.32%</td><td class="text-left">2.23%</td><td class="text-left">$89.22B</td><td class="text-left">$2.82B</td></tr><tr><td class="text-left">Thailand</td><td class="text-left">THA</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">1.94%</td><td class="text-left">0.86%</td><td class="text-left">$81.05B</td><td class="text-left">$-45.61B</td></tr><tr><td class="text-left">Viet Nam</td><td class="text-left">VNM</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">4.18%</td><td class="text-left">0.63%</td><td class="text-left">$149.66B</td><td class="text-left">$-123.46B</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <script>
+        $(document).ready(function() {
+            // Initialize DataTable with options
+            var dataTable = $('#data-table').DataTable({"responsive": true, "pageLength": 25, "lengthMenu": [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]], "scrollX": true, "autoWidth": true, "dom": "<\"top\"lf>rt<\"bottom\"ip><\"clear\">", "order": [[2, "desc"]], "scrollY": "500px", "scrollCollapse": true, "paging": true});
+            
+            // Add custom class handling
+            dataTable.on('draw', function() {
+                // Handle column headers classes
+                dataTable.columns().header().each(function(header, index) {
+                    var originalClass = $(header).attr('class');
+                    if (originalClass && originalClass.indexOf('text-') !== -1) {
+                        $(header).removeClass('dt-head-center').addClass(originalClass);
+                    }
+                });
+                
+                // Handle cell classes
+                $('#data-table tbody td').each(function() {
+                    var originalClass = $(this).attr('class');
+                    if (originalClass && originalClass.indexOf('text-') !== -1) {
+                        $(this).removeClass('dt-body-center').addClass(originalClass);
+                    }
+                });
+            });
+            
+            // Initialize FixedHeader\nnew $.fn.dataTable.FixedHeader(dataTable);
+        });
+        </script>
+    </body>
+    </html>
+    

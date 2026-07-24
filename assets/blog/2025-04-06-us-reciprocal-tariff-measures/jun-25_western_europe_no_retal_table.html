@@ -1,0 +1,94 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data Table</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.4.1/css/responsive.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.3.2/css/fixedHeader.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <style>
+        /* Additional custom styles */
+        table.dataTable th {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        table.dataTable td {
+            border-bottom: 1px solid var(--global-divider-color);
+            font-family: Arial, sans-serif;
+        }
+        /* Custom alignment classes */
+        .text-left {
+            text-align: left !important;
+        }
+        .text-right {
+            text-align: right !important;
+        }
+        /* Override DataTables default alignment */
+        table.dataTable thead th.text-left,
+        table.dataTable tbody td.text-left {
+            text-align: left !important;
+        }
+        table.dataTable thead th.text-right,
+        table.dataTable tbody td.text-right {
+            text-align: right !important;
+        }
+        /* Fixed header styling */
+        .dataTables_scrollHead {
+            background-color: white;
+            z-index: 100;
+        }
+        </style>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/fixedheader/3.3.2/js/dataTables.fixedHeader.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            
+            
+            <table id="data-table" class="display responsive nowrap" style="width:100%">
+                <thead>
+                    <tr>
+                        <th class="text-left">Country Name</th><th class="text-left">ISO Code</th><th class="text-left">Reciprocal Tariff</th><th class="text-left">Retaliatory Rate</th><th class="text-left">Import Share</th><th class="text-left">Export Share</th><th class="text-left">Total Trade</th><th class="text-left">Trade Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="text-left">Austria</td><td class="text-left">AUT</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.54%</td><td class="text-left">0.21%</td><td class="text-left">$21.92B</td><td class="text-left">$-13.06B</td></tr><tr><td class="text-left">Belgium</td><td class="text-left">BEL</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.85%</td><td class="text-left">1.66%</td><td class="text-left">$62.03B</td><td class="text-left">$6.33B</td></tr><tr><td class="text-left">Bulgaria</td><td class="text-left">BGR</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.04%</td><td class="text-left">0.02%</td><td class="text-left">$1.96B</td><td class="text-left">$-0.98B</td></tr><tr><td class="text-left">Switzerland</td><td class="text-left">CHE</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">1.95%</td><td class="text-left">1.21%</td><td class="text-left">$88.50B</td><td class="text-left">$-38.58B</td></tr><tr><td class="text-left">Cyprus</td><td class="text-left">CYP</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.00%</td><td class="text-left">0.01%</td><td class="text-left">$0.24B</td><td class="text-left">$0.12B</td></tr><tr><td class="text-left">Czechia</td><td class="text-left">CZE</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.25%</td><td class="text-left">0.21%</td><td class="text-left">$12.36B</td><td class="text-left">$-3.80B</td></tr><tr><td class="text-left">Germany</td><td class="text-left">DEU</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">4.91%</td><td class="text-left">3.65%</td><td class="text-left">$235.66B</td><td class="text-left">$-84.90B</td></tr><tr><td class="text-left">Denmark</td><td class="text-left">DNK</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.31%</td><td class="text-left">0.28%</td><td class="text-left">$15.85B</td><td class="text-left">$-4.23B</td></tr><tr><td class="text-left">Spain</td><td class="text-left">ESP</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.65%</td><td class="text-left">1.16%</td><td class="text-left">$45.19B</td><td class="text-left">$2.63B</td></tr><tr><td class="text-left">Estonia</td><td class="text-left">EST</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.03%</td><td class="text-left">0.02%</td><td class="text-left">$1.43B</td><td class="text-left">$-0.71B</td></tr><tr><td class="text-left">Finland</td><td class="text-left">FIN</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.25%</td><td class="text-left">0.12%</td><td class="text-left">$10.59B</td><td class="text-left">$-5.47B</td></tr><tr><td class="text-left">France</td><td class="text-left">FRA</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">1.84%</td><td class="text-left">2.15%</td><td class="text-left">$104.38B</td><td class="text-left">$-15.60B</td></tr><tr><td class="text-left">United Kingdom of Great Britain and Northern Irela</td><td class="text-left">GBR</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">2.07%</td><td class="text-left">3.87%</td><td class="text-left">$147.54B</td><td class="text-left">$12.24B</td></tr><tr><td class="text-left">Greece</td><td class="text-left">GRC</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.07%</td><td class="text-left">0.13%</td><td class="text-left">$4.85B</td><td class="text-left">$0.37B</td></tr><tr><td class="text-left">Croatia</td><td class="text-left">HRV</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.03%</td><td class="text-left">0.05%</td><td class="text-left">$1.99B</td><td class="text-left">$-0.01B</td></tr><tr><td class="text-left">Hungary</td><td class="text-left">HUN</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.39%</td><td class="text-left">0.16%</td><td class="text-left">$15.96B</td><td class="text-left">$-9.44B</td></tr><tr><td class="text-left">Ireland</td><td class="text-left">IRL</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">3.16%</td><td class="text-left">0.80%</td><td class="text-left">$119.82B</td><td class="text-left">$-86.76B</td></tr><tr><td class="text-left">Italy</td><td class="text-left">ITA</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">2.34%</td><td class="text-left">1.57%</td><td class="text-left">$108.76B</td><td class="text-left">$-43.96B</td></tr><tr><td class="text-left">Lithuania</td><td class="text-left">LTU</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.06%</td><td class="text-left">0.09%</td><td class="text-left">$3.94B</td><td class="text-left">$-0.08B</td></tr><tr><td class="text-left">Luxembourg</td><td class="text-left">LUX</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.02%</td><td class="text-left">0.06%</td><td class="text-left">$1.84B</td><td class="text-left">$0.44B</td></tr><tr><td class="text-left">Latvia</td><td class="text-left">LVA</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.02%</td><td class="text-left">0.03%</td><td class="text-left">$1.18B</td><td class="text-left">$-0.08B</td></tr><tr><td class="text-left">Malta</td><td class="text-left">MLT</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.01%</td><td class="text-left">0.02%</td><td class="text-left">$0.58B</td><td class="text-left">$0.14B</td></tr><tr><td class="text-left">Netherlands</td><td class="text-left">NLD</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">1.04%</td><td class="text-left">4.34%</td><td class="text-left">$123.75B</td><td class="text-left">$55.53B</td></tr><tr><td class="text-left">Norway</td><td class="text-left">NOR</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.20%</td><td class="text-left">0.22%</td><td class="text-left">$11.13B</td><td class="text-left">$-2.03B</td></tr><tr><td class="text-left">Poland</td><td class="text-left">POL</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.42%</td><td class="text-left">0.58%</td><td class="text-left">$25.63B</td><td class="text-left">$-1.75B</td></tr><tr><td class="text-left">Portugal</td><td class="text-left">PRT</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.20%</td><td class="text-left">0.15%</td><td class="text-left">$9.64B</td><td class="text-left">$-3.54B</td></tr><tr><td class="text-left">Romania</td><td class="text-left">ROU</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.12%</td><td class="text-left">0.06%</td><td class="text-left">$5.17B</td><td class="text-left">$-2.65B</td></tr><tr><td class="text-left">Slovakia</td><td class="text-left">SVK</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.25%</td><td class="text-left">0.03%</td><td class="text-left">$8.74B</td><td class="text-left">$-7.64B</td></tr><tr><td class="text-left">Slovenia</td><td class="text-left">SVN</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.19%</td><td class="text-left">0.02%</td><td class="text-left">$6.62B</td><td class="text-left">$-5.96B</td></tr><tr><td class="text-left">Sweden</td><td class="text-left">SWE</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.55%</td><td class="text-left">0.40%</td><td class="text-left">$26.19B</td><td class="text-left">$-9.81B</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <script>
+        $(document).ready(function() {
+            // Initialize DataTable with options
+            var dataTable = $('#data-table').DataTable({"responsive": true, "pageLength": 25, "lengthMenu": [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]], "scrollX": true, "autoWidth": true, "dom": "<\"top\"lf>rt<\"bottom\"ip><\"clear\">", "order": [[2, "desc"]], "scrollY": "500px", "scrollCollapse": true, "paging": true});
+            
+            // Add custom class handling
+            dataTable.on('draw', function() {
+                // Handle column headers classes
+                dataTable.columns().header().each(function(header, index) {
+                    var originalClass = $(header).attr('class');
+                    if (originalClass && originalClass.indexOf('text-') !== -1) {
+                        $(header).removeClass('dt-head-center').addClass(originalClass);
+                    }
+                });
+                
+                // Handle cell classes
+                $('#data-table tbody td').each(function() {
+                    var originalClass = $(this).attr('class');
+                    if (originalClass && originalClass.indexOf('text-') !== -1) {
+                        $(this).removeClass('dt-body-center').addClass(originalClass);
+                    }
+                });
+            });
+            
+            // Initialize FixedHeader\nnew $.fn.dataTable.FixedHeader(dataTable);
+        });
+        </script>
+    </body>
+    </html>
+    

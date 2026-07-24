@@ -1,0 +1,94 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data Table</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.4.1/css/responsive.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.3.2/css/fixedHeader.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <style>
+        /* Additional custom styles */
+        table.dataTable th {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        table.dataTable td {
+            border-bottom: 1px solid var(--global-divider-color);
+            font-family: Arial, sans-serif;
+        }
+        /* Custom alignment classes */
+        .text-left {
+            text-align: left !important;
+        }
+        .text-right {
+            text-align: right !important;
+        }
+        /* Override DataTables default alignment */
+        table.dataTable thead th.text-left,
+        table.dataTable tbody td.text-left {
+            text-align: left !important;
+        }
+        table.dataTable thead th.text-right,
+        table.dataTable tbody td.text-right {
+            text-align: right !important;
+        }
+        /* Fixed header styling */
+        .dataTables_scrollHead {
+            background-color: white;
+            z-index: 100;
+        }
+        </style>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/fixedheader/3.3.2/js/dataTables.fixedHeader.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            
+            
+            <table id="data-table" class="display responsive nowrap" style="width:100%">
+                <thead>
+                    <tr>
+                        <th class="text-left">Country Name</th><th class="text-left">ISO Code</th><th class="text-left">Reciprocal Tariff</th><th class="text-left">Retaliatory Rate</th><th class="text-left">Import Share</th><th class="text-left">Export Share</th><th class="text-left">Total Trade</th><th class="text-left">Trade Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="text-left">Argentina</td><td class="text-left">ARG</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.22%</td><td class="text-left">0.44%</td><td class="text-left">$16.26B</td><td class="text-left">$2.08B</td></tr><tr><td class="text-left">Bolivia (Plurinational State of)</td><td class="text-left">BOL</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.02%</td><td class="text-left">0.02%</td><td class="text-left">$0.90B</td><td class="text-left">$-0.10B</td></tr><tr><td class="text-left">Brazil</td><td class="text-left">BRA</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">1.30%</td><td class="text-left">2.41%</td><td class="text-left">$91.99B</td><td class="text-left">$7.35B</td></tr><tr><td class="text-left">Chile</td><td class="text-left">CHL</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.50%</td><td class="text-left">0.88%</td><td class="text-left">$34.64B</td><td class="text-left">$1.70B</td></tr><tr><td class="text-left">Colombia</td><td class="text-left">COL</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.54%</td><td class="text-left">0.92%</td><td class="text-left">$36.73B</td><td class="text-left">$1.35B</td></tr><tr><td class="text-left">Costa Rica</td><td class="text-left">CRI</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.36%</td><td class="text-left">0.47%</td><td class="text-left">$21.31B</td><td class="text-left">$-1.95B</td></tr><tr><td class="text-left">Dominican Republic</td><td class="text-left">DOM</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.23%</td><td class="text-left">0.63%</td><td class="text-left">$20.59B</td><td class="text-left">$5.57B</td></tr><tr><td class="text-left">Ecuador</td><td class="text-left">ECU</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.26%</td><td class="text-left">0.36%</td><td class="text-left">$16.05B</td><td class="text-left">$-0.99B</td></tr><tr><td class="text-left">Guatemala</td><td class="text-left">GTM</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.15%</td><td class="text-left">0.47%</td><td class="text-left">$14.73B</td><td class="text-left">$4.69B</td></tr><tr><td class="text-left">Honduras</td><td class="text-left">HND</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.17%</td><td class="text-left">0.34%</td><td class="text-left">$12.59B</td><td class="text-left">$1.53B</td></tr><tr><td class="text-left">Haiti</td><td class="text-left">HTI</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.02%</td><td class="text-left">0.06%</td><td class="text-left">$1.83B</td><td class="text-left">$0.59B</td></tr><tr><td class="text-left">Jamaica</td><td class="text-left">JAM</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.01%</td><td class="text-left">0.13%</td><td class="text-left">$3.00B</td><td class="text-left">$2.28B</td></tr><tr><td class="text-left">Nicaragua</td><td class="text-left">NIC</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.14%</td><td class="text-left">0.14%</td><td class="text-left">$7.56B</td><td class="text-left">$-1.68B</td></tr><tr><td class="text-left">Panama</td><td class="text-left">PAN</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.02%</td><td class="text-left">0.52%</td><td class="text-left">$11.26B</td><td class="text-left">$10.14B</td></tr><tr><td class="text-left">Peru</td><td class="text-left">PER</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.29%</td><td class="text-left">0.54%</td><td class="text-left">$20.58B</td><td class="text-left">$1.86B</td></tr><tr><td class="text-left">Paraguay</td><td class="text-left">PRY</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.01%</td><td class="text-left">0.15%</td><td class="text-left">$3.52B</td><td class="text-left">$2.80B</td></tr><tr><td class="text-left">El Salvador</td><td class="text-left">SLV</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.07%</td><td class="text-left">0.22%</td><td class="text-left">$6.85B</td><td class="text-left">$2.23B</td></tr><tr><td class="text-left">Trinidad and Tobago</td><td class="text-left">TTO</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.10%</td><td class="text-left">0.14%</td><td class="text-left">$6.27B</td><td class="text-left">$-0.39B</td></tr><tr><td class="text-left">Uruguay</td><td class="text-left">URY</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.04%</td><td class="text-left">0.08%</td><td class="text-left">$2.88B</td><td class="text-left">$0.42B</td></tr><tr><td class="text-left">Venezuela (Bolivarian Republic of)</td><td class="text-left">VEN</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.18%</td><td class="text-left">0.20%</td><td class="text-left">$10.22B</td><td class="text-left">$-1.76B</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <script>
+        $(document).ready(function() {
+            // Initialize DataTable with options
+            var dataTable = $('#data-table').DataTable({"responsive": true, "pageLength": 25, "lengthMenu": [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]], "scrollX": true, "autoWidth": true, "dom": "<\"top\"lf>rt<\"bottom\"ip><\"clear\">", "order": [[2, "desc"]], "scrollY": "500px", "scrollCollapse": true, "paging": true});
+            
+            // Add custom class handling
+            dataTable.on('draw', function() {
+                // Handle column headers classes
+                dataTable.columns().header().each(function(header, index) {
+                    var originalClass = $(header).attr('class');
+                    if (originalClass && originalClass.indexOf('text-') !== -1) {
+                        $(header).removeClass('dt-head-center').addClass(originalClass);
+                    }
+                });
+                
+                // Handle cell classes
+                $('#data-table tbody td').each(function() {
+                    var originalClass = $(this).attr('class');
+                    if (originalClass && originalClass.indexOf('text-') !== -1) {
+                        $(this).removeClass('dt-body-center').addClass(originalClass);
+                    }
+                });
+            });
+            
+            // Initialize FixedHeader\nnew $.fn.dataTable.FixedHeader(dataTable);
+        });
+        </script>
+    </body>
+    </html>
+    

@@ -1,0 +1,94 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data Table</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.4.1/css/responsive.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.3.2/css/fixedHeader.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <style>
+        /* Additional custom styles */
+        table.dataTable th {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        table.dataTable td {
+            border-bottom: 1px solid var(--global-divider-color);
+            font-family: Arial, sans-serif;
+        }
+        /* Custom alignment classes */
+        .text-left {
+            text-align: left !important;
+        }
+        .text-right {
+            text-align: right !important;
+        }
+        /* Override DataTables default alignment */
+        table.dataTable thead th.text-left,
+        table.dataTable tbody td.text-left {
+            text-align: left !important;
+        }
+        table.dataTable thead th.text-right,
+        table.dataTable tbody td.text-right {
+            text-align: right !important;
+        }
+        /* Fixed header styling */
+        .dataTables_scrollHead {
+            background-color: white;
+            z-index: 100;
+        }
+        </style>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/fixedheader/3.3.2/js/dataTables.fixedHeader.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            
+            
+            <table id="data-table" class="display responsive nowrap" style="width:100%">
+                <thead>
+                    <tr>
+                        <th class="text-left">Country Name</th><th class="text-left">ISO Code</th><th class="text-left">Reciprocal Tariff</th><th class="text-left">Retaliatory Rate</th><th class="text-left">Import Share</th><th class="text-left">Export Share</th><th class="text-left">Total Trade</th><th class="text-left">Trade Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="text-left">Syrian Arab Republic</td><td class="text-left">SYR</td><td class="text-left">41.00%</td><td class="text-left"></td><td class="text-left">0.00%</td><td class="text-left">0.00%</td><td class="text-left">$0.01B</td><td class="text-left">$-0.01B</td></tr><tr><td class="text-left">Iraq</td><td class="text-left">IRQ</td><td class="text-left">39.00%</td><td class="text-left"></td><td class="text-left">0.23%</td><td class="text-left">0.08%</td><td class="text-left">$9.08B</td><td class="text-left">$-5.76B</td></tr><tr><td class="text-left">Algeria</td><td class="text-left">DZA</td><td class="text-left">30.00%</td><td class="text-left"></td><td class="text-left">0.08%</td><td class="text-left">0.05%</td><td class="text-left">$3.47B</td><td class="text-left">$-1.45B</td></tr><tr><td class="text-left">Tunisia</td><td class="text-left">TUN</td><td class="text-left">28.00%</td><td class="text-left"></td><td class="text-left">0.03%</td><td class="text-left">0.02%</td><td class="text-left">$1.62B</td><td class="text-left">$-0.62B</td></tr><tr><td class="text-left">Jordan</td><td class="text-left">JOR</td><td class="text-left">20.00%</td><td class="text-left"></td><td class="text-left">0.10%</td><td class="text-left">0.10%</td><td class="text-left">$5.39B</td><td class="text-left">$-1.33B</td></tr><tr><td class="text-left">Israel</td><td class="text-left">ISR</td><td class="text-left">17.00%</td><td class="text-left"></td><td class="text-left">0.68%</td><td class="text-left">0.72%</td><td class="text-left">$37.01B</td><td class="text-left">$-7.43B</td></tr><tr><td class="text-left">Bahrain</td><td class="text-left">BHR</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.04%</td><td class="text-left">0.08%</td><td class="text-left">$2.85B</td><td class="text-left">$0.45B</td></tr><tr><td class="text-left">United Arab Emirates</td><td class="text-left">ARE</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.23%</td><td class="text-left">1.31%</td><td class="text-left">$34.44B</td><td class="text-left">$19.50B</td></tr><tr><td class="text-left">Iran (Islamic Republic of)</td><td class="text-left">IRN</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.00%</td><td class="text-left">0.00%</td><td class="text-left">$0.10B</td><td class="text-left">$0.08B</td></tr><tr><td class="text-left">Egypt</td><td class="text-left">EGY</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.08%</td><td class="text-left">0.30%</td><td class="text-left">$8.64B</td><td class="text-left">$3.54B</td></tr><tr><td class="text-left">Lebanon</td><td class="text-left">LBN</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.01%</td><td class="text-left">0.03%</td><td class="text-left">$0.80B</td><td class="text-left">$0.28B</td></tr><tr><td class="text-left">Kuwait</td><td class="text-left">KWT</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.05%</td><td class="text-left">0.12%</td><td class="text-left">$4.05B</td><td class="text-left">$0.77B</td></tr><tr><td class="text-left">Morocco</td><td class="text-left">MAR</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.06%</td><td class="text-left">0.26%</td><td class="text-left">$7.17B</td><td class="text-left">$3.37B</td></tr><tr><td class="text-left">Oman</td><td class="text-left">OMN</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.04%</td><td class="text-left">0.09%</td><td class="text-left">$3.27B</td><td class="text-left">$0.63B</td></tr><tr><td class="text-left">Qatar</td><td class="text-left">QAT</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.06%</td><td class="text-left">0.18%</td><td class="text-left">$5.63B</td><td class="text-left">$1.97B</td></tr><tr><td class="text-left">State of Palestine</td><td class="text-left">PSE</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.00%</td><td class="text-left">0.00%</td><td class="text-left">$0.01B</td><td class="text-left">$-0.01B</td></tr><tr><td class="text-left">Saudi Arabia</td><td class="text-left">SAU</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.39%</td><td class="text-left">0.64%</td><td class="text-left">$25.91B</td><td class="text-left">$0.45B</td></tr><tr><td class="text-left">Turkey</td><td class="text-left">TUR</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.51%</td><td class="text-left">0.74%</td><td class="text-left">$32.04B</td><td class="text-left">$-1.46B</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <script>
+        $(document).ready(function() {
+            // Initialize DataTable with options
+            var dataTable = $('#data-table').DataTable({"responsive": true, "pageLength": 25, "lengthMenu": [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]], "scrollX": true, "autoWidth": true, "dom": "<\"top\"lf>rt<\"bottom\"ip><\"clear\">", "order": [[2, "desc"]], "scrollY": "500px", "scrollCollapse": true, "paging": true});
+            
+            // Add custom class handling
+            dataTable.on('draw', function() {
+                // Handle column headers classes
+                dataTable.columns().header().each(function(header, index) {
+                    var originalClass = $(header).attr('class');
+                    if (originalClass && originalClass.indexOf('text-') !== -1) {
+                        $(header).removeClass('dt-head-center').addClass(originalClass);
+                    }
+                });
+                
+                // Handle cell classes
+                $('#data-table tbody td').each(function() {
+                    var originalClass = $(this).attr('class');
+                    if (originalClass && originalClass.indexOf('text-') !== -1) {
+                        $(this).removeClass('dt-body-center').addClass(originalClass);
+                    }
+                });
+            });
+            
+            // Initialize FixedHeader\nnew $.fn.dataTable.FixedHeader(dataTable);
+        });
+        </script>
+    </body>
+    </html>
+    

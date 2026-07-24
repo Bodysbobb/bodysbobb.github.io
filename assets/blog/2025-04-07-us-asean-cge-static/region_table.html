@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Region Table</title>
+
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--global-card-bg-color);
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: var(--global-text-color);
+    }
+    table.dataTable {
+      width: 100% !important;
+      border-collapse: collapse;
+    }
+    table.dataTable th,
+    table.dataTable td {
+      font-size: clamp(0.8rem, 2vw, 0.95rem);
+      text-align: left;
+      padding: 8px 10px;
+      vertical-align: middle;
+    }
+    /* Custom column width */
+    table.dataTable th:nth-child(1),
+    table.dataTable td:nth-child(1) {
+      width: 20%;
+    }
+    table.dataTable th:nth-child(2),
+    table.dataTable td:nth-child(2) {
+      width: 20%;
+    }
+    table.dataTable th:nth-child(3),
+    table.dataTable td:nth-child(3) {
+      width: 60%;
+    }
+  </style>
+</head>
+
+<body>
+<div class="container">
+  <h1>Region Table</h1>
+  <table id="data-table" class="display nowrap" style="width:100%">
+    <thead>
+      <tr>
+        <th>Aggregation</th>
+        <th>Description</th>
+        <th>GTAP ISO</th>
+      </tr>
+    </thead>
+      <tbody>
+      <tr>
+        <td>ROW</td>
+        <td>Rest of World</td>
+        <td>aus nzl xoc mng xea afg npl xsa arg bol bra chl col ecu pry per ury ven xsm cri gtm hnd pan slv xca dom hti jam pri tto xcb alb blr rus ukr xee xer kgz tjk uzb xsu arm aze geo bhr irn kwt lbn omn pse qat sau tur xws egy mar ben bfa civ gha gin mli ner sen tgo xwf caf cog cod gab com eth ken rwa sdn tza uga swz xsc xtw</td>
+      </tr>
+      <tr>
+        <td>CHN</td>
+        <td>China</td>
+        <td>chn</td>
+      </tr>
+      <tr>
+        <td>HKG</td>
+        <td>China, Hong Kong SAR</td>
+        <td>hkg</td>
+      </tr>
+      <tr>
+        <td>JPN</td>
+        <td>Japan</td>
+        <td>jpn</td>
+      </tr>
+      <tr>
+        <td>KOR</td>
+        <td>Republic of Korea</td>
+        <td>kor</td>
+      </tr>
+      <tr>
+        <td>TWN</td>
+        <td>Taiwan Province of China</td>
+        <td>twn</td>
+      </tr>
+      <tr>
+        <td>BRN</td>
+        <td>Brunei Darussalam</td>
+        <td>brn</td>
+      </tr>
+      <tr>
+        <td>KHM</td>
+        <td>Cambodia</td>
+        <td>khm</td>
+      </tr>
+      <tr>
+        <td>IDN</td>
+        <td>Indonesia</td>
+        <td>idn</td>
+      </tr>
+      <tr>
+        <td>LAO</td>
+        <td>Lao People's Democratic Republ</td>
+        <td>lao</td>
+      </tr>
+      <tr>
+        <td>MYS</td>
+        <td>Malaysia</td>
+        <td>mys</td>
+      </tr>
+      <tr>
+        <td>PHL</td>
+        <td>Philippines</td>
+        <td>phl</td>
+      </tr>
+      <tr>
+        <td>SGP</td>
+        <td>Singapore</td>
+        <td>sgp</td>
+      </tr>
+      <tr>
+        <td>THA</td>
+        <td>Thailand</td>
+        <td>tha</td>
+      </tr>
+      <tr>
+        <td>VNM</td>
+        <td>Viet Nam</td>
+        <td>vnm</td>
+      </tr>
+      <tr>
+        <td>XSE</td>
+        <td>Rest of Southeast Asia</td>
+        <td>xse</td>
+      </tr>
+      <tr>
+        <td>BGD</td>
+        <td>Bangladesh</td>
+        <td>bgd</td>
+      </tr>
+      <tr>
+        <td>IND</td>
+        <td>India</td>
+        <td>ind</td>
+      </tr>
+      <tr>
+        <td>PAK</td>
+        <td>Pakistan</td>
+        <td>pak</td>
+      </tr>
+      <tr>
+        <td>LKA</td>
+        <td>Sri Lanka</td>
+        <td>lka</td>
+      </tr>
+      <tr>
+        <td>CAN</td>
+        <td>Canada</td>
+        <td>can</td>
+      </tr>
+      <tr>
+        <td>USA</td>
+        <td>United States of America</td>
+        <td>usa</td>
+      </tr>
+      <tr>
+        <td>MEX</td>
+        <td>Mexico</td>
+        <td>mex</td>
+      </tr>
+      <tr>
+        <td>XNA</td>
+        <td>Rest of North America</td>
+        <td>xna</td>
+      </tr>
+      <tr>
+        <td>NIC</td>
+        <td>Nicaragua</td>
+        <td>nic</td>
+      </tr>
+      <tr>
+        <td>EU27</td>
+        <td>European Union</td>
+        <td>aut bel bgr hrv cyp cze dnk est fin fra deu grc hun irl ita lva ltu lux mlt nld pol prt rou svk svn esp swe</td>
+      </tr>
+      <tr>
+        <td>GBR</td>
+        <td>United Kingdom of Great Britai</td>
+        <td>gbr</td>
+      </tr>
+      <tr>
+        <td>CHE</td>
+        <td>Switzerland</td>
+        <td>che</td>
+      </tr>
+      <tr>
+        <td>NOR</td>
+        <td>Norway</td>
+        <td>nor</td>
+      </tr>
+      <tr>
+        <td>XEF</td>
+        <td>Rest of EFTA</td>
+        <td>xef</td>
+      </tr>
+      <tr>
+        <td>SRB</td>
+        <td>Serbia</td>
+        <td>srb</td>
+      </tr>
+      <tr>
+        <td>KAZ</td>
+        <td>Kazakhstan</td>
+        <td>kaz</td>
+      </tr>
+      <tr>
+        <td>IRQ</td>
+        <td>Iraq</td>
+        <td>irq</td>
+      </tr>
+      <tr>
+        <td>ISR</td>
+        <td>Israel</td>
+        <td>isr</td>
+      </tr>
+      <tr>
+        <td>JOR</td>
+        <td>Jordan</td>
+        <td>jor</td>
+      </tr>
+      <tr>
+        <td>SYR</td>
+        <td>Syrian Arab Republic</td>
+        <td>syr</td>
+      </tr>
+      <tr>
+        <td>ARE</td>
+        <td>United Arab Emirates</td>
+        <td>are</td>
+      </tr>
+      <tr>
+        <td>DZA</td>
+        <td>Algeria</td>
+        <td>dza</td>
+      </tr>
+      <tr>
+        <td>TUN</td>
+        <td>Tunisia</td>
+        <td>tun</td>
+      </tr>
+      <tr>
+        <td>XNF</td>
+        <td>Rest of North Africa</td>
+        <td>xnf</td>
+      </tr>
+      <tr>
+        <td>CMR</td>
+        <td>Cameroon</td>
+        <td>cmr</td>
+      </tr>
+      <tr>
+        <td>NGA</td>
+        <td>Nigeria</td>
+        <td>nga</td>
+      </tr>
+      <tr>
+        <td>TCD</td>
+        <td>Chad</td>
+        <td>tcd</td>
+      </tr>
+      <tr>
+        <td>GNQ</td>
+        <td>Equatorial Guinea</td>
+        <td>gnq</td>
+      </tr>
+      <tr>
+        <td>XAC</td>
+        <td>South-Central Africa</td>
+        <td>xac</td>
+      </tr>
+      <tr>
+        <td>MDG</td>
+        <td>Madagascar</td>
+        <td>mdg</td>
+      </tr>
+      <tr>
+        <td>MWI</td>
+        <td>Malawi</td>
+        <td>mwi</td>
+      </tr>
+      <tr>
+        <td>MUS</td>
+        <td>Mauritius</td>
+        <td>mus</td>
+      </tr>
+      <tr>
+        <td>MOZ</td>
+        <td>Mozambique</td>
+        <td>moz</td>
+      </tr>
+      <tr>
+        <td>ZMB</td>
+        <td>Zambia</td>
+        <td>zmb</td>
+      </tr>
+      <tr>
+        <td>ZWE</td>
+        <td>Zimbabwe</td>
+        <td>zwe</td>
+      </tr>
+      <tr>
+        <td>XEC</td>
+        <td>Rest of Eastern Africa</td>
+        <td>xec</td>
+      </tr>
+      <tr>
+        <td>BWA</td>
+        <td>Botswana</td>
+        <td>bwa</td>
+      </tr>
+      <tr>
+        <td>NAM</td>
+        <td>Namibia</td>
+        <td>nam</td>
+      </tr>
+      <tr>
+        <td>ZAF</td>
+        <td>South Africa</td>
+        <td>zaf</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+    
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $('#data-table').DataTable({
+      responsive: false,    // <--- Important: No collapse at all
+      scrollX: false,        // <--- Important: No side scroll
+      autoWidth: false,
+      pageLength: 25,
+      order: [[0, 'asc']],
+      columnDefs: [
+        { targets: 0, width: '20%' },
+        { targets: 1, width: '20%' },
+        { targets: 2, width: '60%' }
+      ]
+    });
+  });
+</script>
+  
+</body>
+</html>

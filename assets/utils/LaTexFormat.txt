@@ -1,0 +1,503 @@
+\documentclass[10pt, letterpaper]{article}
+\input{style.tex}
+
+% START %
+%% CONTACT INFO %%
+\begin{document}
+   %\placelastupdatedtext
+    \begin{header}
+        \fontsize{30 pt}{30 pt}
+\textbf{\customhyperlinkk{https://vcard-admin.pkp.homes/ZYrVxC2m6S}{PATTAWEE PUANGCHIT}}
+
+        \vspace{0.3 cm}
+
+        \normalsize
+        \begin{center}
+            Center for Global Trade Analysis, Department of Agricultural Economics, Purdue University
+           
+            KRAN \#634
+            West Lafayette, IN 47907-2056
+            United States
+        \end{center}
+        \mbox{\hrefWithoutArrow{mailto:ppuangch@purdue.edu}{{\footnotesize\faIcon{envelope}}\hspace*{0.13cm}ppuangch@purdue.edu}}
+        \kern 0.25 cm | \kern 0.25 cm
+        \mbox{\hrefWithoutArrow{tel:+1-530-601 3173}{{\footnotesize\faPhone*}\hspace*{0.13cm}+1 530 601 3173}} 
+        \kern 0.25 cm | \kern 0.25 cm 
+        \mbox{\hrefWithoutArrow{https://linkedin.com/in/pattawee-puangchit}{{\footnotesize\faIcon{linkedin}}\hspace*{0.13cm}Pattawee}}
+        \kern 0.25 cm | \kern 0.25 cm
+        \mbox{\hrefWithoutArrow{https://github.com/Bodysbobb}{{\footnotesize\faGithub}\hspace*{0.13cm}Pattawee}}
+        \kern 0.25 cm | \kern 0.25 cm
+        \mbox{\hrefWithoutArrow{https://vcard-admin.pkp.homes/ZYrVxC2m6S}{{\footnotesize\faLink}\hspace*{0.13cm}Pattawee.com}}
+
+    \end{header}
+
+    \vspace{0.3 cm - 0.3 cm}
+
+%% Education %%
+    \section{EDUCATION}
+
+        \begin{threecolentry}{\textbf{Ph.D.}}{
+            2021 -- Expected 2025 
+        }
+            \textbf{Purdue University}, Agricultural Economics
+                \begin{highlights}
+                    Dissertation: \textit{Incorporating Non-tariff Measures to Dynamic CGE Model}
+                \end{highlights}
+        \end{threecolentry}
+        \vspace{0.2 cm}
+        \begin{threecolentry}{\textbf{M.S.}}{
+            2019 -- 2021 
+        }
+            \textbf{University of California, Davis}, Agricultural and Resource Economics
+                \begin{highlights}
+                    Thesis: \textit{The Impact of the ASEAN Economic Community on Agricultural Trade}
+                \end{highlights}
+        \end{threecolentry}
+        \vspace{0.2 cm}        
+        \begin{threecolentry}{\textbf{B.S.}}{
+            2013 -- 2016 
+        }
+            \textbf{Kasetsart University}, Agricultural Economics,  \textit{ summa cum laude}
+        \end{threecolentry}
+
+%% Job Expereience %%    
+    \section{EXPERIENCE}
+
+        \begin{twocolentry}{
+        USA
+        
+        2021 -- Present
+        }
+            
+            \textbf{\customhyperlink{https://www.gtap.agecon.purdue.edu/network/member_display.asp?UserID=37552}{\textcolor{black}{Graduate Research Assistant}}}, Center for Global Trade Analysis (GTAP), Purdue University
+
+            \begin{highlights}
+                Focused on: \textit{International trade policies, CGE model, GTAP-Standard and GTAP-HET model}
+            \end{highlights}
+         \end{twocolentry}
+
+        \vspace{0.2 cm}
+        
+        \begin{twocolentry}{
+        TH
+        
+        2021 -- Present
+        }
+         \textbf{\customhyperlink{https://amataproduction.com/}{\textcolor{black}{Co-Founder \& Head of Data Analytics}}}, AMATA Production Co., Ltd.
+        \end{twocolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+        USA
+        
+        2020 -- 2021
+        }
+            \textbf{Graduate Teaching Assistant}, University of California, Davis
+            \begin{highlights}
+                Course with Julian Alston: \textit{Welfare Analysis of Agricultural Policies}  
+            \end{highlights}
+        \end{twocolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+        TH
+        
+        Jan 2019 -- Aug 2019
+        }
+            \textbf{Market Data Analyst}, Unilever Thailand
+            \begin{highlights}
+                \textit{Future Leaders' Program: Food Retail Team (Knorr)}
+            \end{highlights}
+        \end{twocolentry}
+
+        \vspace{0.2 cm}
+        
+        \begin{twocolentry}{
+        TH
+        
+        2018 -- 2019
+        }
+            \textbf{Business Data Analyst}, True Corporation Public Company Limited
+        \end{twocolentry}
+
+        \vspace{0.2 cm}
+    
+        \begin{twocolentry}{
+        TH
+    
+        2016 -- 2018
+        }
+            \textbf{Business Development Specialist}, Agricultural and Agro-Industrial Product Improvement Institute, Kasetsart University
+        \end{twocolentry}
+
+        \vspace{0.2 cm}
+        
+        \begin{twocolentry}{
+        TH
+    
+        2015 -- 2016
+        }
+            \textbf{Research Assistant}, Agricultural and Agro-Industrial Product Improvement Institute, Kasetsart University
+        \end{twocolentry}
+
+%% Publication %%         
+
+%% Projects %%  
+\section{PROJECTS}
+\textbf{Puangchit, P.}, Chepeliev, M., Corong, E., van der Mensbrugghe, D. (2024). Economic Implications of the U.S. Trade Policies (Tariff War) using CGE Model. Lead Analyst, World Bank-funded research conducted by GTAP. Project funding: \$30,000.
+
+%% Working Paper %%  
+\section{WORKING PAPERS}
+
+        \begin{samepage}
+            Corong, E., \textbf{Puangchit, P.}, \& Tsigas, M. (2022). Chapter 12.B Disaggregating laborpayments. In Global Trade, Assistance, and Production: The GTAP 11 Data Base, edited by A. Aguiar. \textit{Center for Global Trade Analysis}. Department of Agricultural Economics, Purdue University, West Lafayette, IN.
+        \end{samepage}
+
+        \vspace{0.3cm}
+        
+        \begin{samepage}
+            \textbf{Puangchit, P.} Modeling Non-Tariff Measures on ASEAN Region: A Dynamic-GTAP CGE Model. \textit{Working paper}.
+        \end{samepage}
+        
+        \vspace{0.3cm}
+
+        \begin{samepage}
+            \textbf{Puangchit, P.} \& Corong, E. Impacts of Non-tariff Measures on ASEAN Trade: A Dynamic Approach. \textit{Working paper}.
+        \end{samepage}
+        
+        \vspace{0.3cm}
+        
+        \begin{samepage}
+            \textbf{Puangchit, P.} \& Hadachek, J.D. The Impact of the ASEAN Economic Community on Agricultural Trade: Synthetic Control Method. \textit{Working paper}.
+        \end{samepage}
+
+
+%% Presentation %%  
+\section{PRESENTATIONS}
+
+        \begin{twocolentry}{
+        USA
+        
+        June 2024
+        }
+            \textbf{The 27$^{\text{th}}$ GTAP Annual Conference on Global Economic Analysis}, Colorado State University
+            \begin{highlights}
+                Working Paper: \textit{Impacts of Non-tariff Measures on ASEAN Trade: A Dynamic Approach}
+            \end{highlights}
+        \end{twocolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+        TH
+        
+        Dec 2016
+        }
+            \textbf{The 22$^{\text{th}}$ Annual Conference on Economic Analysis}, Kasetsart University
+            \begin{highlights}
+                Research project: \textit{Consumer Behavioral Analysis for Thai Local Ice-cream}
+            \end{highlights}
+        \end{twocolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+        TH
+        
+        June 2014
+        }
+            \textbf{The 50$^{\text{th}}$ TMA Thailand Competitiveness Conference}, The Athenee Hotel, Bangkok
+            \begin{highlights}
+                Research project: \textit{Economic Impacts and Business Analysis for Thai Royal Projects: A Case Study of Doi-Angkhang}s
+            \end{highlights}
+        \end{twocolentry}
+
+%% Scholarship %%
+\section{SCHOLARSHIP \& AWARDS}
+        
+        \begin{twocolentry}{
+        2019 -- Present
+        }
+            \textbf{Anandamahidol Foundation} -- \$60,000 per year
+            \begin{highlights}
+                Highly prestigious and fully-funded scholarship, awarded annually by the King and Thai government to fewer than six exceptional scholars per year for graduate studies abroad, with no repayment required.
+            \end{highlights}
+        \end{twocolentry}
+
+        \vspace{0.2cm}
+
+        \begin{twocolentry}{
+        2018
+        }
+            \textbf{Distinguished Alumni}, Kasetsart University Laboratory School
+        \end{twocolentry}
+
+        \vspace{0.2cm}
+
+        \begin{twocolentry}{
+        2017
+        }
+            \textbf{Valedictorian}, Department of Economics, Kasetsart University
+        \end{twocolentry}
+
+        \vspace{0.2cm}
+
+        \begin{twocolentry}{
+        2014 -- 2017
+        }
+            \textbf{Charoen Pokphand Group} -- \$3,000 per year
+        \end{twocolentry}
+
+        \vspace{0.2cm}
+ 
+        \begin{twocolentry}{
+        2013 -- 2017
+        }
+            \textbf{Mizuho Financial Group} -- \$6,000 per year
+        \end{twocolentry}
+
+        \vspace{0.2cm}
+
+        \begin{twocolentry}{
+        }
+        
+        \textbf{Outstanding Student Awards}, Kasetsart University
+        \end{twocolentry}
+        
+        \vspace{0.1cm}
+        
+        \begin{twocolentry}{
+        2017
+        }
+            \begin{highlights}
+                \item Role Model Students: \textit{Awarded to less than 1\% of students who have won all outstanding awards}
+            \end{highlights}
+        \end{twocolentry}
+
+        \vspace{0.1cm}
+        
+        \begin{twocolentry}{
+        2013, 2014, 2016
+        }
+            \begin{highlights}
+                \item Creative and Innovative Student Researchers 
+            \end{highlights}
+        \end{twocolentry}
+
+        \vspace{0.1cm}
+
+        \begin{twocolentry}{
+        2015
+        }
+            \begin{highlights}
+                \item Behavior and Conduct 
+            \end{highlights}
+        \end{twocolentry}
+
+        \vspace{0.1cm}
+        
+        \begin{twocolentry}{
+        2015, 2016
+        }
+            \begin{highlights}
+                \item Social Activists 
+            \end{highlights}
+        \end{twocolentry}
+
+        \vspace{0.2cm}
+
+        \begin{twocolentry}{
+        2016
+        }
+            \textbf{Bhumibol Adulyadej Scholarship}, Thai government -- \$1,500
+        \end{twocolentry}
+
+        \vspace{0.2cm}
+
+        \begin{twocolentry}{
+        2016
+        }
+            \textbf{The 22$^{\text{th}}$ Strategic and Economics Competition (Winner)}, Kasetsart University
+
+            \begin{highlights}
+                Project: \textit{Consumer Behavioral Analysis for Thai Local Ice-cream}
+            \end{highlights}
+        \end{twocolentry}
+
+        \vspace{0.2cm}
+
+        \begin{twocolentry}{
+        2016
+        }
+            \textbf{National Business Plan Competition (First runner-up)}, Thailand
+
+            \begin{highlights}
+                Project: \textit{Business Model for Ecotourism: Travel and Study of Thai Farm Culture}
+            \end{highlights}
+        \end{twocolentry}
+
+        \vspace{0.2cm}
+
+        \begin{twocolentry}{
+        2015
+        }
+            \textbf{National Strategic and Business Analysis Competition (Winner)}, Thailand
+            \begin{highlights}
+                Project: \textit{Cost Analysis of Digital Platforms for Thai Agricultural Commodities}
+            \end{highlights}            
+        \end{twocolentry}
+
+        \vspace{0.2cm}
+
+        \begin{twocolentry}{
+        2014
+        }
+            \textbf{National Economics Competition (Winner)}, Thailand
+            \begin{highlights}
+                Project: \textit{Impacts of Technological Development on Agricultural Market}
+            \end{highlights}  
+        \end{twocolentry}
+
+        \vspace{0.2cm}
+
+        \begin{twocolentry}{
+        2014
+        }
+            \textbf{National Economics and Business Plan Competition (First runner-up)}, Thailand
+            \begin{highlights}
+                Project: \textit{Economic Impacts and Business Analysis for Thai Royal Projects: A Case Study of Doi-Angkhang}
+            \end{highlights}  
+        \end{twocolentry}
+      
+
+%% Skills %%  
+\section{SKILLS}
+        
+        \begin{onecolentry}
+            \textbf{Programming languages:} 
+            \begin{highlights}
+                \item Fluent:  R, STATA, VBA, GEMPACK
+                \item Experienced: Python, SQL, JavaScript (Google Script), Matlab, GAMS, Julia, SPSS, JavaScript APIs
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.1cm}
+
+        \begin{onecolentry}
+            \textbf{Databases:} 
+            \begin{highlights}
+                \item Proficient: GTAP Database, TRAINS, UNComtrade, ILOSTAT, FAOSTAT, ASEANStat, WTO, CEPII
+                \item Experienced: Nielsen Database, KANTAR Database, OECD Database
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.1cm}
+
+        \begin{onecolentry}
+            \textbf{Languages:} Thai (Native), English (Fluent)
+        \end{onecolentry}
+ 
+%% Service %%  
+\section{LEADERSHIP AND SERVICE}
+
+        \begin{twocolentry}{
+        2017 -- Present
+        }
+            \textbf{Head of Young Alumni}, Department of Economics and Business School, \\ 
+            Kasetsart University
+        \end{twocolentry}
+
+        \vspace{0.2cm}
+
+        \begin{twocolentry}{
+        }
+        
+        \textbf{Representative Speakers}
+        \end{twocolentry}
+        
+        \vspace{0.1cm}
+        
+        \begin{twocolentry}{
+        Aug 2020
+        }
+            \begin{highlights}
+                \item Topic: \textit{“The Pathway to Success”} published by Career Facts Website, 
+            \end{highlights}
+        \end{twocolentry}
+
+        \vspace{0.1cm}
+        
+        \begin{twocolentry}{
+        June 2020
+        }
+            \begin{highlights}
+                \item Topic: \textit{"Future of Thai Educational System and Online Class"} sessioned in Kasetsart University Executive Conference
+            \end{highlights}
+        \end{twocolentry}
+
+        \vspace{0.1cm}
+        
+        \begin{twocolentry}{
+        2017, 2018, 2019
+        }
+            \begin{highlights}
+                \item Topic: \textit{“Inspiring High-School Students to Excel”} sessioned in Kasetsart University Laboratory School Annual Meeting 
+            \end{highlights}
+        \end{twocolentry}
+
+        \vspace{0.2cm}
+
+        \begin{twocolentry}{
+        2015 -- 2016
+        }
+            \textbf{President of Student Association}, Department of Economics, Kasetsart University
+        \end{twocolentry}
+
+%% Reference %%
+\section{REFERENCES}
+\vspace{-5mm}   
+\begin{multicols}{2}
+    \noindent
+    \textbf{\customhyperlinkk{https://ag.purdue.edu/directory/vandermd}{Dr. Dominique van der Mensbrugghe}} \\
+    Director of GTAP | Research Professor \\ 
+    Agricultural Economics \\
+    Purdue University \\
+    Email: vandermd@purdue.edu \\
+    Phone: \mbox{\hrefWithoutArrow{tel:+1 765 496 0076}{\hspace*{0.13cm}+1 765 496 0076}} \\
+
+    \columnbreak
+
+    \noindent
+    \textbf{\customhyperlinkk{https://www.gtap.agecon.purdue.edu/network/member_display.asp?UserID=2958}{Dr. Erwin Corong}} \\
+    Principal Research Economist and Associate Director \\
+    Center for Global Trade Analysis \\
+    Purdue University \\
+    Email: ecorong@purdue.edu \\
+    Phone: \mbox{\hrefWithoutArrow{tel:+1 765 494 4305}{\hspace*{0.13cm}+1 765 494 4305}} \\
+    
+\end{multicols}
+\vspace{-10mm}
+\begin{multicols}{2}
+    \noindent
+    \textbf{\customhyperlinkk{https://www.ku.ac.th/en/university-administrators}{Dr. Nuchanata Mungkung}} \\
+    Vice President for Finance and Asset Management \\ 
+    Agricultural and Resource Economics \\
+    Kasetsart University \\
+    Email: feconnm@ku.ac.th \\
+    Phone: \mbox{\hrefWithoutArrow{tel:+66 765 496 0076}{\hspace*{0.13cm}+66 765 496 0076}} \\
+
+    \columnbreak
+
+    \noindent
+    \textbf{\customhyperlinkk{https://www.mmaglobal.com/speakers/saowarat-opasayanont}{Saowarat Opasayanont}} \\
+    Head of Mother \& Baby and Home Care Marketing, Osotspa \\
+    Former Market Development Director, Food Retail \& Digital Marketing, Unilever Thailand (2014-2019) \\
+    Email: saowarat.opa@osotspa.com \\
+    Phone: \mbox{\hrefWithoutArrow{tel:+66 65 524 4702}{\hspace*{0.13cm}+66 65 524 4702}} \\
+    
+
+
+\end{multicols}
+\end{document}

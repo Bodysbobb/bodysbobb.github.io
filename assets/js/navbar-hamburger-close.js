@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){var e=document.querySelector(".navbar-toggler"),n=document.querySelector(".navbar-collapse"),o=0;e&&n&&window.addEventListener("scroll",function(){if(n.classList.contains("show")){var t=window.scrollY||window.pageYOffset;Math.abs(t-o)>(window.innerWidth<768?40:60)&&e.click(),o=t}else o=window.scrollY||window.pageYOffset})});
