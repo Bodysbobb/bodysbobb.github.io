@@ -1,0 +1,18 @@
+% Basic style file
+\usepackage{geometry}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{enumitem}
+
+% Define custom environments
+\newenvironment{header}{}{}
+\newenvironment{onecolentry}[1]{#1\\}{}
+\newenvironment{twocolentry}[1]{#1 & }{}
+\newenvironment{threecolentry}[2]{#1 & #2 & }{}
+\newenvironment{highlights}{\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt]}{\end{itemize}}
+
+% Define custom commands
+\newcommand{\customhyperlink}[2]{\href{#1}{#2}}
+\newcommand{\customhyperlinkk}[2]{\href{#1}{#2}}
+\newcommand{\hrefWithoutArrow}[2]{\href{#1}{#2}}

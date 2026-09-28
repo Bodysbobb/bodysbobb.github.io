@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#data-table").DataTable({responsive:!0,pageLength:25,lengthMenu:[[10,25,50,100,-1],[10,25,50,100,"All"]],order:[[1,"desc"]],scrollX:!0,autoWidth:!0,dom:'<"top"lf>rt<"bottom"ip><"clear">'})});

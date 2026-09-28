@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Region Table</title>
+    
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.4.1/css/responsive.dataTables.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: var(--global-card-bg-color);
+        margin: 0;
+        padding: 20px;
+    }
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: var(--global-text-color);
+    }
+    table.dataTable {
+        width: 100% !important;
+        border-collapse: collapse;
+    }
+    table.dataTable th {
+        background-color: #f0f0f0;
+        font-weight: bold;
+        text-align: left;
+        padding: 10px;
+    }
+    table.dataTable td {
+        padding: 8px;
+        text-align: left;
+    }
+    table.dataTable td:nth-child(1),
+    table.dataTable th:nth-child(1),
+    table.dataTable td:nth-child(2),
+    table.dataTable th:nth-child(2),
+    table.dataTable td:nth-child(3),
+    table.dataTable th:nth-child(3) {
+        text-align: left;
+    }
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Region Table</h1>
+        <table border="1" class="dataframe display responsive nowrap" id="data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Aggregation</th>
+      <th>Description</th>
+      <th>GSEC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Grains</td>
+      <td>Combines rice and other grains for staple crop analysis</td>
+      <td>pdr, wht, gro, mil</td>
+    </tr>
+    <tr>
+      <td>v_f</td>
+      <td>Vegetables, fruit, nuts</td>
+      <td>v_f</td>
+    </tr>
+    <tr>
+      <td>osd</td>
+      <td>Oil seeds</td>
+      <td>osd</td>
+    </tr>
+    <tr>
+      <td>OthCrop</td>
+      <td>Aggregates remaining crops for diverse crop trade analysis</td>
+      <td>c_b, pfb, ocr</td>
+    </tr>
+    <tr>
+      <td>Livstock</td>
+      <td>Combines all livestock for animal agriculture trade analysis</td>
+      <td>ctl, oap, rmk, wol</td>
+    </tr>
+    <tr>
+      <td>PrimProd</td>
+      <td>Aggregates primary production sectors not elsewhere classified</td>
+      <td>frs, fsh</td>
+    </tr>
+    <tr>
+      <td>Extract</td>
+      <td>Combines all extractive industries for natural resource analysis</td>
+      <td>coa, oil, gas</td>
+    </tr>
+    <tr>
+      <td>oxt</td>
+      <td>Other Extraction (formerly omn Minerals nec)</td>
+      <td>gdt</td>
+    </tr>
+    <tr>
+      <td>Food</td>
+      <td>Aggregates food processing industries for comprehensive analysis</td>
+      <td>oxt, cmt, omt, vol, pcr, ofd</td>
+    </tr>
+    <tr>
+      <td>ofd</td>
+      <td>Food products nec</td>
+      <td>sgr</td>
+    </tr>
+    <tr>
+      <td>tex</td>
+      <td>Textiles</td>
+      <td>b_t</td>
+    </tr>
+    <tr>
+      <td>wap</td>
+      <td>Wearing apparel</td>
+      <td>tex</td>
+    </tr>
+    <tr>
+      <td>lea</td>
+      <td>Leather products</td>
+      <td>wap</td>
+    </tr>
+    <tr>
+      <td>lum</td>
+      <td>Wood products</td>
+      <td>lea</td>
+    </tr>
+    <tr>
+      <td>ppp</td>
+      <td>Paper products, publishing</td>
+      <td>lum</td>
+    </tr>
+    <tr>
+      <td>p_c</td>
+      <td>Petroleum, coal products</td>
+      <td>ppp</td>
+    </tr>
+    <tr>
+      <td>chm</td>
+      <td>Chemical products</td>
+      <td>p_c</td>
+    </tr>
+    <tr>
+      <td>bph</td>
+      <td>Basic pharmaceutical products</td>
+      <td>chm</td>
+    </tr>
+    <tr>
+      <td>rpp</td>
+      <td>Rubber and plastic products</td>
+      <td>bph</td>
+    </tr>
+    <tr>
+      <td>nmm</td>
+      <td>Mineral products nec</td>
+      <td>rpp</td>
+    </tr>
+    <tr>
+      <td>i_s</td>
+      <td>Ferrous metals</td>
+      <td>nmm</td>
+    </tr>
+    <tr>
+      <td>nfm</td>
+      <td>Metals nec</td>
+      <td>i_s</td>
+    </tr>
+    <tr>
+      <td>fmp</td>
+      <td>Metal products</td>
+      <td>nfm</td>
+    </tr>
+    <tr>
+      <td>ele</td>
+      <td>Computer, electronic and optical products</td>
+      <td>fmp</td>
+    </tr>
+    <tr>
+      <td>eeq</td>
+      <td>Electrical equipment</td>
+      <td>ele</td>
+    </tr>
+    <tr>
+      <td>ome</td>
+      <td>Machinery and equipment nec</td>
+      <td>eeq</td>
+    </tr>
+    <tr>
+      <td>mvh</td>
+      <td>Motor vehicles and parts</td>
+      <td>ome</td>
+    </tr>
+    <tr>
+      <td>otn</td>
+      <td>Transport equipment nec</td>
+      <td>mvh</td>
+    </tr>
+    <tr>
+      <td>omf</td>
+      <td>Manufactures nec</td>
+      <td>otn</td>
+    </tr>
+    <tr>
+      <td>ely</td>
+      <td>Electricity</td>
+      <td>omf</td>
+    </tr>
+    <tr>
+      <td>Utility</td>
+      <td>Groups utility services due to similar regulatory environments</td>
+      <td>ely, wtr</td>
+    </tr>
+    <tr>
+      <td>cns</td>
+      <td>Construction</td>
+      <td>cns</td>
+    </tr>
+    <tr>
+      <td>TransComm</td>
+      <td>Combines trade and communication for analysis of commerce facilitation</td>
+      <td>trd, otp, wtp, atp, whs, cmn</td>
+    </tr>
+    <tr>
+      <td>BusServ</td>
+      <td>Aggregates various business-related services</td>
+      <td>afs, rsa, obs, ros, dwe</td>
+    </tr>
+    <tr>
+      <td>FinServ</td>
+      <td>Aggregates financial services for financial sector analysis</td>
+      <td>ofi, ins</td>
+    </tr>
+    <tr>
+      <td>GovServ</td>
+      <td>Combines government-related services for public sector analysis</td>
+      <td>osg, edu, hht</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#data-table').DataTable({
+        responsive: true,
+        pageLength: 25,
+        order: [[0, 'asc']]
+    });
+});
+</script>
+
+</body>
+</html>

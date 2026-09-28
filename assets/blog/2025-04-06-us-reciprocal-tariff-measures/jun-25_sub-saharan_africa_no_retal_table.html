@@ -1,0 +1,94 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data Table</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.4.1/css/responsive.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.3.2/css/fixedHeader.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <style>
+        /* Additional custom styles */
+        table.dataTable th {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        table.dataTable td {
+            border-bottom: 1px solid var(--global-divider-color);
+            font-family: Arial, sans-serif;
+        }
+        /* Custom alignment classes */
+        .text-left {
+            text-align: left !important;
+        }
+        .text-right {
+            text-align: right !important;
+        }
+        /* Override DataTables default alignment */
+        table.dataTable thead th.text-left,
+        table.dataTable tbody td.text-left {
+            text-align: left !important;
+        }
+        table.dataTable thead th.text-right,
+        table.dataTable tbody td.text-right {
+            text-align: right !important;
+        }
+        /* Fixed header styling */
+        .dataTables_scrollHead {
+            background-color: white;
+            z-index: 100;
+        }
+        </style>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/fixedheader/3.3.2/js/dataTables.fixedHeader.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            
+            
+            <table id="data-table" class="display responsive nowrap" style="width:100%">
+                <thead>
+                    <tr>
+                        <th class="text-left">Country Name</th><th class="text-left">ISO Code</th><th class="text-left">Reciprocal Tariff</th><th class="text-left">Retaliatory Rate</th><th class="text-left">Import Share</th><th class="text-left">Export Share</th><th class="text-left">Total Trade</th><th class="text-left">Trade Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="text-left">Benin</td><td class="text-left">BEN</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.00%</td><td class="text-left">0.01%</td><td class="text-left">$0.27B</td><td class="text-left">$0.17B</td></tr><tr><td class="text-left">Burkina Faso</td><td class="text-left">BFA</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.00%</td><td class="text-left">0.00%</td><td class="text-left">$0.05B</td><td class="text-left">$0.05B</td></tr><tr><td class="text-left">Botswana</td><td class="text-left">BWA</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.01%</td><td class="text-left">0.00%</td><td class="text-left">$0.51B</td><td class="text-left">$-0.31B</td></tr><tr><td class="text-left">Central African Republic</td><td class="text-left">CAF</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.00%</td><td class="text-left">0.00%</td><td class="text-left">$0.04B</td><td class="text-left">$0.04B</td></tr><tr><td class="text-left">Côte d'Ivoire</td><td class="text-left">CIV</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.03%</td><td class="text-left">0.03%</td><td class="text-left">$1.61B</td><td class="text-left">$-0.41B</td></tr><tr><td class="text-left">Cameroon</td><td class="text-left">CMR</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.01%</td><td class="text-left">0.01%</td><td class="text-left">$0.44B</td><td class="text-left">$-0.06B</td></tr><tr><td class="text-left">Democratic Republic of the Congo</td><td class="text-left">COD</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.01%</td><td class="text-left">0.01%</td><td class="text-left">$0.57B</td><td class="text-left">$-0.07B</td></tr><tr><td class="text-left">Congo</td><td class="text-left">COG</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.00%</td><td class="text-left">0.01%</td><td class="text-left">$0.28B</td><td class="text-left">$0.20B</td></tr><tr><td class="text-left">Comoros</td><td class="text-left">COM</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.00%</td><td class="text-left">0.00%</td><td class="text-left">$0.00B</td><td class="text-left">$0.00B</td></tr><tr><td class="text-left">Ethiopia</td><td class="text-left">ETH</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.01%</td><td class="text-left">0.05%</td><td class="text-left">$1.49B</td><td class="text-left">$0.55B</td></tr><tr><td class="text-left">Gabon</td><td class="text-left">GAB</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.01%</td><td class="text-left">0.01%</td><td class="text-left">$0.34B</td><td class="text-left">$0.00B</td></tr><tr><td class="text-left">Ghana</td><td class="text-left">GHA</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.04%</td><td class="text-left">0.05%</td><td class="text-left">$2.14B</td><td class="text-left">$-0.20B</td></tr><tr><td class="text-left">Guinea</td><td class="text-left">GIN</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.00%</td><td class="text-left">0.01%</td><td class="text-left">$0.15B</td><td class="text-left">$0.13B</td></tr><tr><td class="text-left">Equatorial Guinea</td><td class="text-left">GNQ</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.00%</td><td class="text-left">0.00%</td><td class="text-left">$0.23B</td><td class="text-left">$-0.03B</td></tr><tr><td class="text-left">Kenya</td><td class="text-left">KEN</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.02%</td><td class="text-left">0.04%</td><td class="text-left">$1.52B</td><td class="text-left">$0.04B</td></tr><tr><td class="text-left">Madagascar</td><td class="text-left">MDG</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.02%</td><td class="text-left">0.00%</td><td class="text-left">$0.78B</td><td class="text-left">$-0.68B</td></tr><tr><td class="text-left">Mali</td><td class="text-left">MLI</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.00%</td><td class="text-left">0.00%</td><td class="text-left">$0.06B</td><td class="text-left">$0.04B</td></tr><tr><td class="text-left">Mozambique</td><td class="text-left">MOZ</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.01%</td><td class="text-left">0.01%</td><td class="text-left">$0.37B</td><td class="text-left">$-0.07B</td></tr><tr><td class="text-left">Mauritius</td><td class="text-left">MUS</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.01%</td><td class="text-left">0.00%</td><td class="text-left">$0.28B</td><td class="text-left">$-0.18B</td></tr><tr><td class="text-left">Malawi</td><td class="text-left">MWI</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.00%</td><td class="text-left">0.00%</td><td class="text-left">$0.07B</td><td class="text-left">$-0.01B</td></tr><tr><td class="text-left">Namibia</td><td class="text-left">NAM</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.01%</td><td class="text-left">0.01%</td><td class="text-left">$0.44B</td><td class="text-left">$-0.12B</td></tr><tr><td class="text-left">Niger</td><td class="text-left">NER</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.00%</td><td class="text-left">0.00%</td><td class="text-left">$0.05B</td><td class="text-left">$0.03B</td></tr><tr><td class="text-left">Nigeria</td><td class="text-left">NGA</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.17%</td><td class="text-left">0.20%</td><td class="text-left">$9.87B</td><td class="text-left">$-1.53B</td></tr><tr><td class="text-left">Rwanda</td><td class="text-left">RWA</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.00%</td><td class="text-left">0.00%</td><td class="text-left">$0.07B</td><td class="text-left">$0.01B</td></tr><tr><td class="text-left">Sudan</td><td class="text-left">SDN</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.00%</td><td class="text-left">0.00%</td><td class="text-left">$0.07B</td><td class="text-left">$0.05B</td></tr><tr><td class="text-left">Senegal</td><td class="text-left">SEN</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.01%</td><td class="text-left">0.02%</td><td class="text-left">$0.59B</td><td class="text-left">$0.11B</td></tr><tr><td class="text-left">Eswatini</td><td class="text-left">SWZ</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.00%</td><td class="text-left">0.00%</td><td class="text-left">$0.07B</td><td class="text-left">$0.03B</td></tr><tr><td class="text-left">Chad</td><td class="text-left">TCD</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.00%</td><td class="text-left">0.00%</td><td class="text-left">$0.14B</td><td class="text-left">$-0.02B</td></tr><tr><td class="text-left">Togo</td><td class="text-left">TGO</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.00%</td><td class="text-left">0.01%</td><td class="text-left">$0.37B</td><td class="text-left">$0.19B</td></tr><tr><td class="text-left">United Republic of Tanzania</td><td class="text-left">TZA</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.01%</td><td class="text-left">0.03%</td><td class="text-left">$0.77B</td><td class="text-left">$0.37B</td></tr><tr><td class="text-left">Uganda</td><td class="text-left">UGA</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.00%</td><td class="text-left">0.01%</td><td class="text-left">$0.24B</td><td class="text-left">$-0.02B</td></tr><tr><td class="text-left">South Africa</td><td class="text-left">ZAF</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.45%</td><td class="text-left">0.28%</td><td class="text-left">$20.37B</td><td class="text-left">$-8.73B</td></tr><tr><td class="text-left">Zambia</td><td class="text-left">ZMB</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.01%</td><td class="text-left">0.01%</td><td class="text-left">$0.28B</td><td class="text-left">$-0.06B</td></tr><tr><td class="text-left">Zimbabwe</td><td class="text-left">ZWE</td><td class="text-left">10.00%</td><td class="text-left"></td><td class="text-left">0.00%</td><td class="text-left">0.00%</td><td class="text-left">$0.11B</td><td class="text-left">$-0.03B</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <script>
+        $(document).ready(function() {
+            // Initialize DataTable with options
+            var dataTable = $('#data-table').DataTable({"responsive": true, "pageLength": 25, "lengthMenu": [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]], "scrollX": true, "autoWidth": true, "dom": "<\"top\"lf>rt<\"bottom\"ip><\"clear\">", "order": [[2, "desc"]], "scrollY": "500px", "scrollCollapse": true, "paging": true});
+            
+            // Add custom class handling
+            dataTable.on('draw', function() {
+                // Handle column headers classes
+                dataTable.columns().header().each(function(header, index) {
+                    var originalClass = $(header).attr('class');
+                    if (originalClass && originalClass.indexOf('text-') !== -1) {
+                        $(header).removeClass('dt-head-center').addClass(originalClass);
+                    }
+                });
+                
+                // Handle cell classes
+                $('#data-table tbody td').each(function() {
+                    var originalClass = $(this).attr('class');
+                    if (originalClass && originalClass.indexOf('text-') !== -1) {
+                        $(this).removeClass('dt-body-center').addClass(originalClass);
+                    }
+                });
+            });
+            
+            // Initialize FixedHeader\nnew $.fn.dataTable.FixedHeader(dataTable);
+        });
+        </script>
+    </body>
+    </html>
+    
